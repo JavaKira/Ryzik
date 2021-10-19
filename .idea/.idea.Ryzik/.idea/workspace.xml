@@ -26,16 +26,46 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="empty Unity project">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Atlas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Atlas.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/TileType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1zb7XJttqC7YOBcHdGlUlTAWR6d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,11 +74,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34950384" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29988974" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,7 +117,17 @@
       <workItem from="1634412242056" duration="765000" />
       <workItem from="1634413521285" duration="1803000" />
       <workItem from="1634485127630" duration="899000" />
+      <workItem from="1634659696768" duration="1174000" />
+      <workItem from="1634670871516" duration="1254000" />
     </task>
+    <task id="LOCAL-00001" summary="empty Unity project">
+      <created>1634659984785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634659984785</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,27 +176,93 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="empty Unity project" />
+    <option name="LAST_COMMIT_MESSAGE" value="empty Unity project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="705" y="365" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1634414073923" />
+    <state width="938" height="390" key="GridCell.Tab.0.bottom" timestamp="1634671502727">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502727" />
+    <state width="938" height="390" key="GridCell.Tab.0.center" timestamp="1634671502726">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502726" />
+    <state width="938" height="390" key="GridCell.Tab.0.left" timestamp="1634671502726">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502726" />
+    <state width="938" height="390" key="GridCell.Tab.0.right" timestamp="1634671502727">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502727" />
+    <state width="938" height="390" key="GridCell.Tab.1.bottom" timestamp="1634671502228">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502228" />
+    <state width="938" height="390" key="GridCell.Tab.1.center" timestamp="1634671502228">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502228" />
+    <state width="938" height="390" key="GridCell.Tab.1.left" timestamp="1634671502228">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502228" />
+    <state width="938" height="390" key="GridCell.Tab.1.right" timestamp="1634671502228">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502228" />
+    <state width="938" height="390" key="GridCell.Tab.2.bottom" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.2.center" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.2.left" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.2.right" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.3.bottom" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.3.center" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.3.left" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
+    <state width="938" height="390" key="GridCell.Tab.3.right" timestamp="1634671502229">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="938" height="390" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634671502229" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1634411889697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1634411889697" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1634411579010">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1634659986305">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1634411579010" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1634659986305" />
     <state x="836" y="275" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1634409168510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="836" y="275" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1634409168510" />
-    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634485242575">
+    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634659885139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1634485242575" />
+    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1634659885139" />
   </component>
 </project>
