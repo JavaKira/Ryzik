@@ -11,4 +11,9 @@ public class Tile : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = sprite;
     }
+
+    public static Tile GetByName(string name)
+    {
+        return Resources.Load<Tile>(name);
+    }
 }
