@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Tile : MonoBehaviour
+public class Tile
 {
-    [SerializeField] private Sprite sprite;
+    private Vector2 _inTilemapPosition;
+    private Block _block;
 
-    private Vector2 _inTilemapPosition = new Vector2();
-    private void Start()
+    public readonly UnityEvent Changed = new UnityEvent();
+
+    public Vector2 InTilemapPosition
     {
-        GetComponent<SpriteRenderer>().sprite = sprite;
+        get => _inTilemapPosition;
+        set => _inTilemapPosition = value;
     }
 
-    public static Tile GetByName(string name)
+    public Block Block
     {
-        return Resources.Load<Tile>(name);
+        get => _block;
+        set
+        {
+            _block = value;
+            Changed.Invoke();
+        }
     }
 }

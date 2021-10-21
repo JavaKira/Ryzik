@@ -4,7 +4,8 @@ using UnityEngine;
 public class TileMap : MonoBehaviour
 {
     [SerializeField] private float tilesGap;
-    
+    [SerializeField] private TileBehaviour tilePrefab;
+
     private Tile[][] _tiles;
     private void Start()
     {
@@ -23,7 +24,11 @@ public class TileMap : MonoBehaviour
             
             for (var x = 0; x < _tiles[i].Length;x++)
             {
-                var tile = Tile.GetByName("WoodenPlankTile");
+                var tile = new Tile
+                {
+                    Block = Block.GetByName("WoodenPlank"),
+                    InTilemapPosition = new Vector3(i * tilesGap, x * tilesGap)
+                };
                 _tiles[i][x] = tile;
             }
         }
@@ -31,18 +36,25 @@ public class TileMap : MonoBehaviour
 
     private void Build()
     {
-        for (int x = 0; x < _tiles.Length; x++)
+        foreach (var t in _tiles)
         {
-            for (int y = 0; y < _tiles[x].Length; y++)
+            foreach (var t1 in t)
             {
-                var transform1 = transform;
-                Instantiate(
-                    _tiles[x][y],
-                    transform1.position + new Vector3(x * tilesGap, y * tilesGap, 0),
-                    Quaternion.identity, 
-                    transform1
-                );
+                AddTile(t1);
             }
         }
+    }
+
+    private void AddTile(Tile tile)
+    {
+        var createdTile = Instantiate(
+            tilePrefab,
+            new Vector2(tile.InTilemapPosition.x, tile.InTilemapPosition.y),
+            Quaternion.identity,
+            transform
+        );
+
+        createdTile.Tile = tile;
+        createdTile.Tile.Block = tile.Block;
     }
 }
