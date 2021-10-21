@@ -5,7 +5,7 @@ public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.W)) Move(Vector2.up);
         
@@ -20,7 +20,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         var moveDirectionForce = new Vector3(direction.x, direction.y , 0.0f);
         moveDirectionForce *= speed;
-        
-        transform.Translate(moveDirectionForce * Time.fixedTime);
+
+        transform.Translate(moveDirectionForce * Time.fixedDeltaTime);
     }
 }
