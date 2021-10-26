@@ -8,6 +8,6 @@ public class Floor : MonoBehaviour
     
     public static Floor GetByName(string name)
     {
-        return Resources.Load<Floor>(name);
+        return Resources.Load<Floor>("floors/" + name);
     }
 }

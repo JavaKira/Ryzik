@@ -8,6 +8,6 @@ public class Block : MonoBehaviour
     
     public static Block GetByName(string name)
     {
-        return Resources.Load<Block>(name);
+        return Resources.Load<Block>("blocks/" + name);
     }
 }
