@@ -6,8 +6,8 @@ using UnityEngine.Events;
 public class Tile
 {
     private Vector2 _inTilemapPosition;
-    private Block _block;
-    private Floor _floor;
+    private Block _block = Block.GetAir();
+    private Floor _floor = Floor.GetAir();
 
     public readonly UnityEvent Changed = new UnityEvent();
 

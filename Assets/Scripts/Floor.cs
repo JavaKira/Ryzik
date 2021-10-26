@@ -6,6 +6,11 @@ public class Floor : MonoBehaviour
     
     public Sprite Sprite => sprite;
     
+    public static Floor GetAir()
+    {
+        return GetByName("Air");
+    }
+    
     public static Floor GetByName(string name)
     {
         return Resources.Load<Floor>("floors/" + name);
