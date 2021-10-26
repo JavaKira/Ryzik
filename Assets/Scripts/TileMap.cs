@@ -26,7 +26,7 @@ public class TileMap : MonoBehaviour
             {
                 var tile = new Tile
                 {
-                    Block = Block.GetByName("WoodenPlank"),
+                    Floor = Floor.GetByName("Grass"),
                     InTilemapPosition = new Vector3(i * tilesGap, x * tilesGap)
                 };
                 _tiles[i][x] = tile;

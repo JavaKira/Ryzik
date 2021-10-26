@@ -7,6 +7,7 @@ public class Tile
 {
     private Vector2 _inTilemapPosition;
     private Block _block;
+    private Floor _floor;
 
     public readonly UnityEvent Changed = new UnityEvent();
 
@@ -22,6 +23,16 @@ public class Tile
         set
         {
             _block = value;
+            Changed.Invoke();
+        }
+    }
+    
+    public Floor Floor
+    {
+        get => _floor;
+        set
+        {
+            _floor = value;
             Changed.Invoke();
         }
     }

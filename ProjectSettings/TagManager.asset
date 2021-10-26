@@ -38,8 +38,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Ground
+  - name: Floor
     uniqueID: 864377841
+    locked: 0
+  - name: Block
+    uniqueID: 3468568805
     locked: 0
   - name: Default
     uniqueID: 0
