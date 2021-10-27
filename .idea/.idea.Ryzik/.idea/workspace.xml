@@ -26,11 +26,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added Floor and Block folder in resources">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added Air floor and block as default value for tile">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +50,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/Block.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/Floor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/Floor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/Block.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -63,9 +61,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +122,7 @@
       <workItem from="1634710330101" duration="168000" />
       <workItem from="1634837986719" duration="6739000" />
       <workItem from="1635170848877" duration="594000" />
-      <workItem from="1635268896214" duration="2243000" />
+      <workItem from="1635268896214" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -203,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635273568767</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Air floor and block as default value for tile">
+      <created>1635274008025</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1635274008025</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +268,8 @@
     <MESSAGE value="Change MainCamera background color to white" />
     <MESSAGE value="Added Floor" />
     <MESSAGE value="Added Floor and Block folder in resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Floor and Block folder in resources" />
+    <MESSAGE value="Added Air floor and block as default value for tile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Air floor and block as default value for tile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -350,10 +356,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1634411889697" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635272165284">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635274010247">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635272165284" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635274010247" />
     <state x="836" y="275" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1634409168510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
