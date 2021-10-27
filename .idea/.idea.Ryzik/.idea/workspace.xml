@@ -26,9 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="added collisions">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="added EditorScene">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +123,7 @@
       <workItem from="1634837986719" duration="6739000" />
       <workItem from="1635170848877" duration="594000" />
       <workItem from="1635268896214" duration="3234000" />
-      <workItem from="1635319430575" duration="3919000" />
+      <workItem from="1635319430575" duration="4237000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -228,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635322136459</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added EditorScene">
+      <created>1635333655209</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635333655209</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +301,8 @@
     <MESSAGE value="fix sorting layer for tile block and floor" />
     <MESSAGE value="advance map and added WoodenPlank floor" />
     <MESSAGE value="added collisions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added collisions" />
+    <MESSAGE value="added EditorScene" />
+    <option name="LAST_COMMIT_MESSAGE" value="added EditorScene" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -367,10 +377,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="390" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634676409626" />
-    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1635272652322">
+    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1635333746588">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635272652322" />
+    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635333746588" />
     <state x="808" y="250" key="RollbackChangesDialog" timestamp="1634847392216">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
