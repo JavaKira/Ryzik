@@ -16,11 +16,11 @@ public class TileMap : MonoBehaviour
     // after i made load from file
     private void DebugWorld()
     {
-        _tiles = new Tile[10][];
+        _tiles = new Tile[100][];
 
         for (var i = 0; i < _tiles.Length; i++)
         {
-            _tiles[i] = new Tile[10];
+            _tiles[i] = new Tile[100];
             
             for (var x = 0; x < _tiles[i].Length;x++)
             {
@@ -30,6 +30,23 @@ public class TileMap : MonoBehaviour
                     InTilemapPosition = new Vector3(i * tilesGap, x * tilesGap)
                 };
                 _tiles[i][x] = tile;
+            }
+        }
+
+        for (int x = 0; x < 10; x++)
+        {
+            for (int y = 0; y < 10; y++)
+            {
+                _tiles[x + 30][y + 30].Block = Block.GetByName("WoodenPlank");
+            }
+        }
+        
+        for (int x = 0; x < 8; x++)
+        {
+            for (int y = 0; y < 8; y++)
+            {
+                _tiles[x + 31][y + 31].Block = Block.GetAir();
+                _tiles[x + 31][y + 31].Floor = Floor.GetByName("WoodenPlank");
             }
         }
     }
