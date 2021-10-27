@@ -28,6 +28,17 @@ public class TileBehaviour : MonoBehaviour
     private void Init()
     {
         _block.GetComponent<SpriteRenderer>().sprite = _tile.Block.Sprite;
+        var bounds = _block.GetComponent<BoxCollider2D>();
+        if (_tile.Block.Bounds != null)
+        {
+            bounds.enabled = true;
+            bounds.size = _tile.Block.Bounds.size;
+        }
+        else
+        {
+            bounds.enabled = false;
+        }
+
         _floor.GetComponent<SpriteRenderer>().sprite = _tile.Floor.Sprite;
     }
 }

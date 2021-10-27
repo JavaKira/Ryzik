@@ -3,8 +3,10 @@
 public class Block : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
+    [SerializeField] private BoxCollider2D bounds;
 
     public Sprite Sprite => sprite;
+    public BoxCollider2D Bounds => bounds;
 
     public static Block GetAir()
     {
