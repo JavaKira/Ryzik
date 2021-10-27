@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Floor : MonoBehaviour
+public class Floor : MonoBehaviour, IContent
 {
     [SerializeField] private Sprite sprite;
     
@@ -14,5 +14,10 @@ public class Floor : MonoBehaviour
     public static Floor GetByName(string name)
     {
         return Resources.Load<Floor>("floors/" + name);
+    }
+    
+    public static Floor[] GetAll()
+    {
+        return Resources.LoadAll<Floor>("floors/");
     }
 }

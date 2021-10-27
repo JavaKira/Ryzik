@@ -26,10 +26,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="added EditorScene">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs.meta" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Import TextMeshPro">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ContentSelectBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ContentSelectBuilder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IContent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IContent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +56,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Resources/Blocks/Air.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -58,12 +66,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TileType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPurse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IContent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ContentSelectBuilder.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +135,7 @@
       <workItem from="1634837986719" duration="6739000" />
       <workItem from="1635170848877" duration="594000" />
       <workItem from="1635268896214" duration="3234000" />
-      <workItem from="1635319430575" duration="4237000" />
+      <workItem from="1635319430575" duration="8901000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -237,7 +249,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635333655209</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added EditorInput">
+      <created>1635334029043</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1635334029043</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update EditorInput moveSpeed to 20">
+      <created>1635334111663</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635334111663</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Import TextMeshPro">
+      <created>1635334265142</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1635334265142</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +335,10 @@
     <MESSAGE value="advance map and added WoodenPlank floor" />
     <MESSAGE value="added collisions" />
     <MESSAGE value="added EditorScene" />
-    <option name="LAST_COMMIT_MESSAGE" value="added EditorScene" />
+    <MESSAGE value="Added EditorInput" />
+    <MESSAGE value="Update EditorInput moveSpeed to 20" />
+    <MESSAGE value="Import TextMeshPro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Import TextMeshPro" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -377,10 +413,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="390" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634676409626" />
-    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1635333746588">
+    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1635335847904">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635333746588" />
+    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635335847904" />
     <state x="808" y="250" key="RollbackChangesDialog" timestamp="1634847392216">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -389,10 +425,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1634411889697" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635322139899">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635334268250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635322139899" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635334268250" />
     <state x="836" y="275" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1634409168510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

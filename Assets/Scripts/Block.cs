@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Block : MonoBehaviour
+public class Block : MonoBehaviour, IContent
 {
     [SerializeField] private Sprite sprite;
     [SerializeField] private BoxCollider2D bounds;
@@ -16,5 +16,10 @@ public class Block : MonoBehaviour
     public static Block GetByName(string name)
     {
         return Resources.Load<Block>("blocks/" + name);
+    }
+
+    public static Block[] GetAll()
+    {
+        return Resources.LoadAll<Block>("blocks/");
     }
 }
