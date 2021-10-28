@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Content: {fileID: 1899393021}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -1118,6 +1118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0cff67eb2a4a5f93c7bdf1ff7b634f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileMap: {fileID: 1913846917}
   cameraPoint: {fileID: 1606440005}
   moveSpeed: 20
 --- !u!4 &2111872519
