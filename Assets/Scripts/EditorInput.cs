@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EditorInput : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class EditorInput : MonoBehaviour
 
     private void ProcessInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !IsMouseOverUI())
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             tileMap.GetTileByWorldPosition((int) mousePosition.x, (int) mousePosition.y).SetIContent(SelectedContent);
@@ -36,6 +37,11 @@ public class EditorInput : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) Move(Vector2.left);
         
         if (Input.GetKey(KeyCode.D)) Move(Vector2.right);
+    }
+
+    private static bool IsMouseOverUI()
+    {
+        return EventSystem.current.IsPointerOverGameObject();
     }
 
     private void Move(Vector3 direction)

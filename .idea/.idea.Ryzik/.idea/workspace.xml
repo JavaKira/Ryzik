@@ -26,13 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="added ContentSelectPanel in editor">
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Change ContentSelectPanel scrollView MovementType to Unrestricted">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ContentSelectItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ContentSelectItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +49,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,7 +128,7 @@
       <workItem from="1635170848877" duration="594000" />
       <workItem from="1635268896214" duration="3234000" />
       <workItem from="1635319430575" duration="9813000" />
-      <workItem from="1635434904314" duration="1699000" />
+      <workItem from="1635434904314" duration="2441000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -272,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635346465944</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added block and floor place in editor">
+      <created>1635436703625</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1635436703625</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Change ContentSelectPanel scrollView MovementType to Unrestricted">
+      <created>1635436946812</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1635436946812</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +353,9 @@
     <MESSAGE value="Update EditorInput moveSpeed to 20" />
     <MESSAGE value="Import TextMeshPro" />
     <MESSAGE value="added ContentSelectPanel in editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ContentSelectPanel in editor" />
+    <MESSAGE value="Added block and floor place in editor" />
+    <MESSAGE value="Change ContentSelectPanel scrollView MovementType to Unrestricted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change ContentSelectPanel scrollView MovementType to Unrestricted" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -428,10 +442,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1634411889697" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635346467827">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635436948297">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635346467827" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635436948297" />
     <state x="836" y="275" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1634409168510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
