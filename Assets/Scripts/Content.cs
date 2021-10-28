@@ -2,15 +2,22 @@
 
 public static class Content
 {
+    private static List<IContent> _contentList;
+    
     public static void Init()
     {
-        var items = new List<IContent>();
-        items.AddRange(Block.GetAll());
-        items.AddRange(Floor.GetAll());
+        _contentList = new List<IContent>();
+        _contentList.AddRange(Block.GetAll());
+        _contentList.AddRange(Floor.GetAll());
          
-        for (var i = 0; i < items.Count; i++)
+        for (var i = 0; i < _contentList.Count; i++)
         {
-            items[i].SetID(i);
+            _contentList[i].SetID(i);
         }
+    }
+    
+    public static T GetByID<T>(int id) where T : IContent
+    {
+        return (T) _contentList[id];
     }
 }
