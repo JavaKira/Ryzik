@@ -5,6 +5,7 @@ public class Block : MonoBehaviour, IContent
     [SerializeField] private Sprite sprite;
     [SerializeField] private BoxCollider2D bounds;
 
+    public int id;
     public Sprite Sprite => sprite;
     public BoxCollider2D Bounds => bounds;
 
@@ -21,5 +22,15 @@ public class Block : MonoBehaviour, IContent
     public static Block[] GetAll()
     {
         return Resources.LoadAll<Block>("blocks/");
+    }
+
+    public int GetID()
+    {
+        return id;
+    }
+    
+    public void SetID(int newId)
+    {
+        id = newId;
     }
 }

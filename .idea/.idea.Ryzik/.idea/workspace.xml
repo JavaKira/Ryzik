@@ -26,9 +26,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Change ContentSelectPanel scrollView MovementType to Unrestricted">
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added test is mouse not over ui when place block">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Content.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Content.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO/Reads.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO/Reads.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO/Writes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/IO/Writes.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EditorScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EditorScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IContent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +66,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/IContent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -59,15 +78,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ObjectPurse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IContent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentSelectBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Writes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IO/Writes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IO/Reads.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IContent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +152,7 @@
       <workItem from="1635170848877" duration="594000" />
       <workItem from="1635268896214" duration="3234000" />
       <workItem from="1635319430575" duration="9813000" />
-      <workItem from="1635434904314" duration="2441000" />
+      <workItem from="1635434904314" duration="6776000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -284,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635436946812</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added test is mouse not over ui when place block">
+      <created>1635437516780</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1635437516780</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +386,8 @@
     <MESSAGE value="added ContentSelectPanel in editor" />
     <MESSAGE value="Added block and floor place in editor" />
     <MESSAGE value="Change ContentSelectPanel scrollView MovementType to Unrestricted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change ContentSelectPanel scrollView MovementType to Unrestricted" />
+    <MESSAGE value="Added test is mouse not over ui when place block" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test is mouse not over ui when place block" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -430,10 +462,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="390" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634676409626" />
-    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1635435512446">
+    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1635447816037">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635435512446" />
+    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635447816037" />
     <state x="808" y="250" key="RollbackChangesDialog" timestamp="1634847392216">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -442,10 +474,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1634411889697" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635436948297">
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1635446765151">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635436948297" />
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635446765151" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635437527638">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635437527638" />
     <state x="836" y="275" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1634409168510">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
