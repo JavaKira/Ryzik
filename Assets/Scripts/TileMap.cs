@@ -62,6 +62,16 @@ public class TileMap : MonoBehaviour
         }
     }
 
+    public Tile GetTile(int x, int y)
+    {
+        return _tiles[x][y];
+    }
+
+    public Tile GetTileByWorldPosition(int worldX, int worldY)
+    {
+        return GetTile((int) (worldX / tilesGap), (int) (worldY / tilesGap));
+    }
+
     private void AddTile(Tile tile)
     {
         var createdTile = Instantiate(

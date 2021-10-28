@@ -36,4 +36,19 @@ public class Tile
             Changed.Invoke();
         }
     }
+
+    public void SetIContent(IContent content)
+    {
+        switch (content)
+        {
+            case Block block:
+                _block = block;
+                break;
+            case Floor floor:
+                _floor = floor;
+                break;
+        }
+        
+        Changed.Invoke();
+    }
 }

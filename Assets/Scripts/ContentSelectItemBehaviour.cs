@@ -6,7 +6,7 @@ public class ContentSelectItemBehaviour : MonoBehaviour
     [SerializeField] private Image itemImage;
 
     private IContent _content;
-    
+
     public IContent Content
     {
         get => _content;
@@ -25,5 +25,11 @@ public class ContentSelectItemBehaviour : MonoBehaviour
             Block block => block.Sprite,
             _ => itemImage.sprite
         };
+    }
+
+    public void SetContentToEditorInput()
+    {
+        if (_content != null)
+            EditorInput.Main.SelectedContent = _content;
     }
 }
