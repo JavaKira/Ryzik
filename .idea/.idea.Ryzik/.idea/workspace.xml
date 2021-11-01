@@ -25,9 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added TileMap Dispose(), he call when reload map">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" afterDir="false" />
-    </list>
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added MapIO MapSaveExtension const" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +146,7 @@
       <workItem from="1635610439717" duration="1198000" />
       <workItem from="1635682217837" duration="6256000" />
       <workItem from="1635710559310" duration="3847000" />
-      <workItem from="1635749773671" duration="6074000" />
+      <workItem from="1635749773671" duration="6392000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -360,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635789253346</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added MapIO MapSaveExtension const">
+      <created>1635789571524</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1635789571524</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +414,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added PlayerBehaviour" />
     <MESSAGE value="Added ObjectPursue, now camera pursue player" />
     <MESSAGE value="Set Atlas.png PixelsPerUnit to 4" />
     <MESSAGE value="Added Block" />
@@ -434,7 +438,8 @@
     <MESSAGE value="Added Map and MapIO, map load and save" />
     <MESSAGE value="Added save and load map world, and input field for map name" />
     <MESSAGE value="Added TileMap Dispose(), he call when reload map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TileMap Dispose(), he call when reload map" />
+    <MESSAGE value="Added MapIO MapSaveExtension const" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MapIO MapSaveExtension const" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -529,10 +534,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635446765151" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635789261606">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1635789572978">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635789261606" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635789572978" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1635755583327">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
