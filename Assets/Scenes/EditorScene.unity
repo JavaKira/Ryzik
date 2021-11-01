@@ -1727,8 +1727,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1913846918}
   - component: {fileID: 1913846917}
-  - component: {fileID: 1913846919}
-  - component: {fileID: 1913846920}
   m_Layer: 0
   m_Name: TileMap
   m_TagString: Untagged
@@ -1765,34 +1763,6 @@ Transform:
   m_Father: {fileID: 136095671}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1913846919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913846916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 666e2ba25d334b48b44e02e173b3fecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapName: test
-  tileMap: {fileID: 1913846917}
---- !u!114 &1913846920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913846916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c929824a3374220bcd8ec7849c96148, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapName: test
-  tileMap: {fileID: 1913846917}
 --- !u!1 &1927041088
 GameObject:
   m_ObjectHideFlags: 0
