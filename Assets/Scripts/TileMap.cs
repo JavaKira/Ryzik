@@ -44,6 +44,14 @@ public class TileMap : MonoBehaviour
         }
     }
 
+    public void Dispose()
+    {
+        foreach (var tile in GetComponentsInChildren<TileBehaviour>())
+        {
+            Destroy(tile.gameObject);
+        }
+    }
+
     public Tile GetTile(int x, int y)
     {
         return _tiles[x][y];

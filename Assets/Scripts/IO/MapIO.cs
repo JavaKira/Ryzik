@@ -21,6 +21,7 @@ namespace IO
             var fileStream = new FileStream(fileName, FileMode.Open);
             var reader = new BinaryReader(fileStream);
             var reads = new Reads(reader);
+            map.Tilemap.Dispose();
             
             map.Read(reads);
             
