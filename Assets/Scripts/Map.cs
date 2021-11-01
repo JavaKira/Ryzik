@@ -8,6 +8,8 @@ public class Map : MonoBehaviour
 
     public string Name { get; set; }
 
+    public TileMap Tilemap => _tilemap;
+
     private void Awake()
     {
         _tilemap = GetComponentInChildren<TileMap>();
