@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using IO;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -35,6 +36,18 @@ public class Tile
             _floor = value;
             Changed.Invoke();
         }
+    }
+    
+    public void Read(Reads reads)
+    {
+        _block = Content.GetByID<Block>(reads.Int());
+        _floor = Content.GetByID<Floor>(reads.Int());
+    }
+
+    public void Write(Writes writes)
+    {
+        writes.Int(_block.GetID());
+        writes.Int(_floor.GetID());
     }
 
     public void SetIContent(IContent content)
