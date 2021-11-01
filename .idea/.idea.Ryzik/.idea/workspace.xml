@@ -25,12 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added DefaultEditorMap and loading it when starting the game">
-      <change afterPath="$PROJECT_DIR$/MainMenuBackgroundMap.rusav" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added MainMenu scene, and background">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EditorScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EditorScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +88,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorMapLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +154,7 @@
       <workItem from="1635610439717" duration="1198000" />
       <workItem from="1635682217837" duration="6256000" />
       <workItem from="1635710559310" duration="3847000" />
-      <workItem from="1635749773671" duration="8020000" />
+      <workItem from="1635749773671" duration="9340000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -379,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635790002669</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added MainMenu scene, and background">
+      <created>1635795248349</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1635795248349</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +436,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Set Atlas.png PixelsPerUnit to 4" />
     <MESSAGE value="Added Block" />
     <MESSAGE value="Change MainCamera background color to white" />
     <MESSAGE value="Added Floor" />
@@ -453,7 +460,8 @@
     <MESSAGE value="Added TileMap Dispose(), he call when reload map" />
     <MESSAGE value="Added MapIO MapSaveExtension const" />
     <MESSAGE value="Added DefaultEditorMap and loading it when starting the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DefaultEditorMap and loading it when starting the game" />
+    <MESSAGE value="Added MainMenu scene, and background" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MainMenu scene, and background" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
