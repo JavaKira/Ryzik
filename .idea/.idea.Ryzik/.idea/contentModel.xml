@@ -26,6 +26,8 @@
           </e>
           <e p="MainMenuPanelBehaviour.cs" t="Include" />
           <e p="Map.cs" t="Include" />
+          <e p="MapButton.cs" t="Include" />
+          <e p="MapSelectBuilder.cs" t="Include" />
           <e p="ObjectPurse.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
