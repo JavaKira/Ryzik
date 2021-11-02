@@ -25,12 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added MainMenu scene, and background">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added simple MainMenu ui">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,15 +45,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/TileMap.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/TileMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/TileMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/TileMap.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/TileMap.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -155,6 +144,7 @@
       <workItem from="1635682217837" duration="6256000" />
       <workItem from="1635710559310" duration="3847000" />
       <workItem from="1635749773671" duration="9340000" />
+      <workItem from="1635838368371" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -544,10 +534,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635789873250" />
-    <state x="808" y="250" key="RollbackChangesDialog" timestamp="1635750339649">
+    <state x="808" y="250" key="RollbackChangesDialog" timestamp="1635797390371">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="808" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635750339649" />
+    <state x="808" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635797390371" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1634411889697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
