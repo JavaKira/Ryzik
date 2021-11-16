@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using UnityEngine;
 
 namespace IO
 {
@@ -32,6 +33,12 @@ namespace IO
             fileStream.Close();
             reader.Close();
             return map;
+        }
+
+        public static FileInfo[] GetMapsList()
+        {
+            var dir = new DirectoryInfo(Directory.GetCurrentDirectory());
+            return dir.GetFiles("*" + MapSaveExtension);
         }
     }
 }

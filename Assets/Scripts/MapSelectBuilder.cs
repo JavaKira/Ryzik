@@ -1,9 +1,9 @@
 ﻿using System;
+using IO;
 using UnityEngine;
 
 public class MapSelectBuilder : MonoBehaviour
 {
-    [SerializeField] private string[] maps;
     [SerializeField] private float gap;
     [SerializeField] private MapButton mapButtonPrefab;
 
@@ -14,6 +14,7 @@ public class MapSelectBuilder : MonoBehaviour
 
     private void Build()
     {
+        var maps = MapIO.GetMapsList();
         for (var i = 0; i < maps.Length; i++)
         {
             var mapButton = Instantiate(
@@ -30,7 +31,7 @@ public class MapSelectBuilder : MonoBehaviour
                 0
             );
             
-            mapButton.Build(maps[i]);
+            mapButton.Build(maps[i].Name.Replace(maps[i].Extension, ""));
         }
     }
 }
