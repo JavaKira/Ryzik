@@ -836,7 +836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1287554309
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maps:
-  - Test1
+  - DefaultEditorMap
   - Test2
   gap: 12
   mapButtonPrefab: {fileID: 3658195236401459863, guid: 440be2cc7744f6f489ccba118a3705d7,
