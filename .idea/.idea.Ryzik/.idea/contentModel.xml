@@ -13,6 +13,7 @@
           <e p="ContentSelectItemBehaviour.cs" t="Include" />
           <e p="DebugWorldLoader.cs" t="Include" />
           <e p="DebugWorldSaver.cs" t="Include" />
+          <e p="EditorButtonBehaviour.cs" t="Include" />
           <e p="EditorInput.cs" t="Include" />
           <e p="EditorMapLoader.cs" t="Include" />
           <e p="EditorMapSaver.cs" t="Include" />
