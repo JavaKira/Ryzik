@@ -25,11 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Fix EditorScene ui">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs.meta" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added Joystick in editor">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,13 +54,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/ProjectSettings/QualitySettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/EditorScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/MainMenu.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -95,6 +97,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorButtonBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoysctickInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
       </list>
     </option>
   </component>
@@ -166,7 +170,9 @@
       <workItem from="1635973928893" duration="3563000" />
       <workItem from="1637072205796" duration="8405000" />
       <workItem from="1637121552604" duration="1045000" />
-      <workItem from="1637147540334" duration="2834000" />
+      <workItem from="1637147540334" duration="4309000" />
+      <workItem from="1637175493896" duration="1200000" />
+      <workItem from="1637254033269" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -469,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637150718018</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Added Joystick in editor">
+      <created>1637151508717</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1637151508717</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Update EditorInput moveSpeed to 20" />
     <MESSAGE value="Import TextMeshPro" />
     <MESSAGE value="added ContentSelectPanel in editor" />
     <MESSAGE value="Added block and floor place in editor" />
@@ -543,7 +555,8 @@
     <MESSAGE value="Fixed ui for android" />
     <MESSAGE value="Added editor button in main menu" />
     <MESSAGE value="Fix EditorScene ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix EditorScene ui" />
+    <MESSAGE value="Added Joystick in editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Joystick in editor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -638,10 +651,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635446765151" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637150720806">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637151510023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637150720806" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637151510023" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1635755583327">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -466,6 +466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveJoystick
       objectReference: {fileID: 0}
+    - target: {fileID: 2109834766685831476, guid: 518434b17ce30514db625b0d16959f0b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2109834766685831479, guid: 518434b17ce30514db625b0d16959f0b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -668,8 +673,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 1432623341
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1433743027
