@@ -9,6 +9,7 @@ public static class Content
         _contentList = new List<IContent>();
         _contentList.AddRange(Block.GetAll());
         _contentList.AddRange(Floor.GetAll());
+        _contentList.AddRange(Item.GetAll());
          
         for (var i = 0; i < _contentList.Count; i++)
         {

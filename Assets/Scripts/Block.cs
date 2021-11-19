@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Block : MonoBehaviour, IContent
+public class Block : MonoBehaviour, IMappableContent
 {
     [SerializeField] private Sprite sprite;
     [SerializeField] private BoxCollider2D bounds;

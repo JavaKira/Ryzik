@@ -21,6 +21,7 @@
           <e p="Floor.cs" t="Include" />
           <e p="Game.cs" t="Include" />
           <e p="IContent.cs" t="Include" />
+          <e p="IMappableContent.cs" t="Include" />
           <e p="IO" t="Include">
             <e p="MapIO.cs" t="Include" />
             <e p="Reads.cs" t="Include" />

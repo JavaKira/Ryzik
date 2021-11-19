@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Floor : MonoBehaviour, IContent
+public class Floor : MonoBehaviour, IMappableContent
 {
     [SerializeField] private Sprite sprite;
     
