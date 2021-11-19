@@ -25,11 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added MappableContent and Item implements Content">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added Cursor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +87,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorButtonBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoysctickInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MappableContent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +168,7 @@
       <workItem from="1637147540334" duration="4309000" />
       <workItem from="1637175493896" duration="1200000" />
       <workItem from="1637254033269" duration="2956000" />
-      <workItem from="1637294034560" duration="955000" />
+      <workItem from="1637294034560" duration="1578000" />
     </task>
     <task id="LOCAL-00001" summary="empty Unity project">
       <created>1634659984785</created>
@@ -507,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637294712848</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Added Cursor">
+      <created>1637295289293</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1637295289293</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added test is mouse not over ui when place block" />
     <MESSAGE value="Added id for content" />
     <MESSAGE value="Added ContentList in Content" />
     <MESSAGE value="Added Size property and width height field" />
@@ -581,7 +586,8 @@
     <MESSAGE value="Added Air Item" />
     <MESSAGE value="Added ItemSlot" />
     <MESSAGE value="Added MappableContent and Item implements Content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MappableContent and Item implements Content" />
+    <MESSAGE value="Added Cursor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Cursor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -660,10 +666,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="390" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1634676409626" />
-    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1637294478281">
+    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1637295436451">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637294478281" />
+    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637295436451" />
     <state x="808" y="250" key="RollbackChangesDialog" timestamp="1635842067790">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

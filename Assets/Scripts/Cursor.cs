@@ -1,12 +1,20 @@
+using System;
 using UnityEngine;
 
 public class Cursor : MonoBehaviour
 {
+    public static Cursor Instance;
+    
     private SpriteRenderer _spriteRenderer;
     private Camera _camera;
     private Item _selectedItem;
     
     public Item SelectedItem => _selectedItem;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -14,7 +22,7 @@ public class Cursor : MonoBehaviour
         _camera = Camera.main;
     }
 
-    void Update()
+    private void Update()
     {
         UpdatePosition();
     }
