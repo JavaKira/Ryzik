@@ -11,6 +11,7 @@
           <e p="Content.cs" t="Include" />
           <e p="ContentSelectBuilder.cs" t="Include" />
           <e p="ContentSelectItemBehaviour.cs" t="Include" />
+          <e p="Cursor.cs" t="Include" />
           <e p="DebugWorldLoader.cs" t="Include" />
           <e p="DebugWorldSaver.cs" t="Include" />
           <e p="EditorButtonBehaviour.cs" t="Include" />
