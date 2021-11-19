@@ -4,6 +4,8 @@ public class Item : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
 
+    public Sprite Sprite => sprite;
+
     public static Item GetByName(string name)
     {
         return Resources.Load<Item>("items/" + name);
