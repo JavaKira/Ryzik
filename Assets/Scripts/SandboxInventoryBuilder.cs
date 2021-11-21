@@ -20,8 +20,9 @@ public class SandboxInventoryBuilder : MonoBehaviour
 
         foreach (var item in content)
         {
+            if (item.name == "Air") continue;
+            
             var slot = Instantiate(slotPrefab, transform);
-
             slot.SetItem(item);
 
             var slotTransform = (RectTransform) slot.transform;
