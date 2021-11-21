@@ -9,12 +9,19 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0) && !EditorInput.IsMouseOverUI())
+        if (EditorInput.IsMouseOverUI() && hotbar.SelectedSlot == null) return;
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
+        if (Input.GetMouseButtonDown(1))
         {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (hotbar.SelectedSlot != null)
-                tileMap.GetTileByWorldPosition((int) mousePosition.x, (int) mousePosition.y)
+            tileMap.GetTileByWorldPosition((int) mousePosition.x, (int) mousePosition.y)
                     .SetIContent(hotbar.SelectedSlot.Item);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            tileMap.GetTileByWorldPosition((int) mousePosition.x, (int) mousePosition.y)
+                    .Block = Block.GetAir();
         }
     }
 
