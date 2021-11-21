@@ -56,11 +56,13 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
     private void Select()
     {
         Selected = true;
+        GetComponentInChildren<Image>().color = Color.gray;
         onSelected.Invoke();
     }
     
     public void Unselect()
     {
         Selected = false;
+        GetComponentInChildren<Image>().color = Color.white;
     }
 }
