@@ -21,4 +21,17 @@ public static class Content
     {
         return (T) _contentList[id];
     }
+
+    public static List<T> GetByType<T>() where T : IContent
+    {
+        var matchingList = new List<T>();
+
+        _contentList.ForEach(content =>
+        {
+            if (content is T c)
+                matchingList.Add(c);
+        });
+
+        return matchingList;
+    }
 }

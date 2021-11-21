@@ -39,6 +39,7 @@
           <e p="ObjectPurse.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="PlayerJoystickInspector.cs" t="Include" />
+          <e p="SandboxInventoryBuilder.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileBehaviour.cs" t="Include" />
           <e p="TileMap.cs" t="Include" />
