@@ -2,10 +2,10 @@
 
 public class Item : MonoBehaviour, IContent
 {
-    [SerializeField] private Sprite sprite;
+    [SerializeField] private Sprite icon;
 
     private int _id;
-    public Sprite Sprite => sprite;
+    public Sprite Icon => icon;
 
     public static Item GetByName(string name)
     {

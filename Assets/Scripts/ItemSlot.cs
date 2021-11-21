@@ -45,7 +45,7 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
     {
         Item = newItem;
         icon.color = Item == null ? Color.clear : Color.white;
-        if (Item != null) icon.sprite = Item.Sprite;
+        if (Item != null) icon.sprite = Item.Icon;
     }
 
     public bool Empty()

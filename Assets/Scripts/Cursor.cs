@@ -37,7 +37,7 @@ public class Cursor : MonoBehaviour
     public void SetItem(Item newItem)
     {
         _selectedItem = newItem;
-        _spriteRenderer.sprite = newItem != null ? _selectedItem.Sprite : null;
+        _spriteRenderer.sprite = newItem != null ? _selectedItem.Icon : null;
     }
 
     public bool Empty()
