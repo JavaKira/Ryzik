@@ -25,10 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Fix ItemSlot item drag">
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Fix Hotbar ItemSlot select">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +45,19 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/0e/e7f99cee/TextAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/ItemSlot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0092050B-4332-4E0F-9C5F-461A25D2615B/42/9614f244/IPointerDownHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/Hotbar.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/SandboxInventoryBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/9e/1d4f57d3/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/ItemSlot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/9e/1d4f57d3/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/Block.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scripts/ItemSlot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0092050B-4332-4E0F-9C5F-461A25D2615B/42/9614f244/IPointerDownHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -93,19 +95,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MappableContent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/d.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SandboxItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BlockItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
       </list>
     </option>
   </component>
@@ -185,21 +188,7 @@
       <workItem from="1637351437441" duration="784000" />
       <workItem from="1637398909808" duration="2635000" />
       <workItem from="1637435356354" duration="622000" />
-      <workItem from="1637472921497" duration="9867000" />
-    </task>
-    <task id="LOCAL-00007" summary="Set Atlas.png PixelsPerUnit to 4">
-      <created>1634675901205</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1634675901205</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added Block">
-      <created>1634849424917</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1634849424917</updated>
+      <workItem from="1637472921497" duration="11161000" />
     </task>
     <task id="LOCAL-00009" summary="Change MainCamera background color to white">
       <created>1635272151304</created>
@@ -530,7 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637509226465</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Fix SandboxInventoryBuilder, will place an item into slot">
+      <created>1637509802803</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1637509802803</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fix Hotbar ItemSlot select">
+      <created>1637509999390</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1637509999390</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,8 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added MapIO MapSaveExtension const" />
-    <MESSAGE value="Added DefaultEditorMap and loading it when starting the game" />
     <MESSAGE value="Added MainMenu scene, and background" />
     <MESSAGE value="Layout map select panel in MainMenu" />
     <MESSAGE value="Added MapButton script and prefab" />
@@ -604,7 +605,9 @@
     <MESSAGE value="Added Inventory list builder" />
     <MESSAGE value="Added SandboxItemSlot" />
     <MESSAGE value="Fix ItemSlot item drag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix ItemSlot item drag" />
+    <MESSAGE value="Fix SandboxInventoryBuilder, will place an item into slot" />
+    <MESSAGE value="Fix Hotbar ItemSlot select" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Hotbar ItemSlot select" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -619,10 +622,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="707" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1637507711630" />
-    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1635754670014">
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1637510727188">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635754670014" />
+    <state x="92" y="92" width="1736" height="896" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637510727188" />
     <state width="1877" height="390" key="GridCell.Tab.0.bottom" timestamp="1637473847338">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -691,10 +694,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637509622722" />
-    <state x="808" y="250" key="RollbackChangesDialog" timestamp="1637473126443">
+    <state x="808" y="250" key="RollbackChangesDialog" timestamp="1637510728045">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="808" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637473126443" />
+    <state x="808" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637510728045" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1634411889697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -703,10 +706,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637509017757" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637509062343">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637510001004">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637509062343" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637510001004" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1635755583327">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
