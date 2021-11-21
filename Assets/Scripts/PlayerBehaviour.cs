@@ -4,16 +4,18 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private TileMap tileMap;
+    [SerializeField] private Hotbar hotbar;
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W)) Move(Vector2.up);
-        
-        if (Input.GetKey(KeyCode.S)) Move(Vector2.down);
-        
-        if (Input.GetKey(KeyCode.A)) Move(Vector2.left);
-        
-        if (Input.GetKey(KeyCode.D)) Move(Vector2.right);
+        if (Input.GetMouseButtonDown(0) && !EditorInput.IsMouseOverUI())
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            if (hotbar.SelectedSlot != null)
+                tileMap.GetTileByWorldPosition((int) mousePosition.x, (int) mousePosition.y)
+                    .SetIContent(hotbar.SelectedSlot.Item);
+        }
     }
 
     public void Move(Vector2 direction)

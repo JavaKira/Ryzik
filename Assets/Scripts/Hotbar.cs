@@ -7,6 +7,8 @@ public class Hotbar : MonoBehaviour
     private TMP_Text _itemNameText;
     private ItemSlot[] _slots;
 
+    public ItemSlot SelectedSlot { get; set; }
+
     private void Start()
     {
         _itemNameText = GetComponentInChildren<TMP_Text>();
@@ -16,6 +18,8 @@ public class Hotbar : MonoBehaviour
         {
             slot.onSelected.AddListener(() =>
             {
+                SelectedSlot = slot;
+                
                 if (!slot.Empty()) 
                     _itemNameText.SetText(slot.Item.name);
 

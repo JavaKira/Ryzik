@@ -39,7 +39,7 @@ public class EditorInput : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) Move(Vector2.right);
     }
 
-    private static bool IsMouseOverUI()
+    public static bool IsMouseOverUI()
     {
         return EventSystem.current.IsPointerOverGameObject();
     }

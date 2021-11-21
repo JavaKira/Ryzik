@@ -968,6 +968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  tileMap: {fileID: 2131959629}
+  hotbar: {fileID: 604263619}
 --- !u!212 &773085109
 SpriteRenderer:
   m_ObjectHideFlags: 0
