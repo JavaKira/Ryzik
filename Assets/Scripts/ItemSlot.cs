@@ -58,4 +58,9 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
         Selected = true;
         onSelected.Invoke();
     }
+    
+    public void Unselect()
+    {
+        Selected = false;
+    }
 }

@@ -18,6 +18,12 @@ public class Hotbar : MonoBehaviour
             {
                 if (!slot.Empty()) 
                     _itemNameText.SetText(slot.Item.name);
+
+                foreach (var itemSlot in _slots)
+                {
+                    if (itemSlot != slot)
+                        itemSlot.Unselect();
+                }
             });
         }
     }
