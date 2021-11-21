@@ -27,7 +27,10 @@ public class EditorInput : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !IsMouseOverUI())
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            tileMap.GetTileByWorldPosition((int) mousePosition.x, (int) mousePosition.y).SetIContent(SelectedContent);
+            tileMap.GetTile(
+                (int) ((mousePosition.x + 4) / 8), 
+                (int) ((mousePosition.y + 4) / 8)
+            ).SetIContent(SelectedContent);
         }
         
         if (Input.GetKey(KeyCode.W)) Move(Vector2.up);
