@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,9 +13,9 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
     public Item Item { get; private set; }
     private bool Selected { get; set; }
 
-    private void Start()
+    private void Awake()
     {
-        SetItem(Item.GetByName("Stick"));
+        SetItem(Item.GetByName("Air"));
     }
 
     public virtual void OnPointerDown(PointerEventData eventData)
@@ -40,7 +41,7 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
         }
     }
 
-    private void SetItem(Item newItem)
+    public void SetItem(Item newItem)
     {
         Item = newItem;
         icon.color = Item == null ? Color.clear : Color.white;
@@ -49,7 +50,7 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
 
     public bool Empty()
     {
-        return Item == null;
+        return Item == null || Item == Item.GetByName("Air");
     }
 
     private void Select()

@@ -22,6 +22,8 @@ public class SandboxInventoryBuilder : MonoBehaviour
         {
             var slot = Instantiate(slotPrefab, transform);
 
+            slot.SetItem(item);
+
             var slotTransform = (RectTransform) slot.transform;
             var sizeDelta = slotTransform.sizeDelta;
             
