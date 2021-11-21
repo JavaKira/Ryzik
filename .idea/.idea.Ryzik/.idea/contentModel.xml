@@ -21,6 +21,7 @@
           <e p="EditorMapSaver.cs" t="Include" />
           <e p="Floor.cs" t="Include" />
           <e p="Game.cs" t="Include" />
+          <e p="Hotbar.cs" t="Include" />
           <e p="IContent.cs" t="Include" />
           <e p="IMappableContent.cs" t="Include" />
           <e p="IO" t="Include">
