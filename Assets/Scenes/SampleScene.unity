@@ -1868,7 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08770420104f4a1586e80a61206f10ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotPrefab: {fileID: 8168042044119879875, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
+  slotPrefab: {fileID: 5296085908611697927, guid: eb034dc7bc83df446b9fc79d6e1b5d5a,
     type: 3}
   slotsPerLine: 4
   gap: 6

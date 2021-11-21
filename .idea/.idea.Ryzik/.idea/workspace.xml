@@ -25,13 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added Inventory layout and UIInput">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs.meta" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added Inventory list builder">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SandboxItemSlot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SandboxItemSlot.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Content.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/0e/e7f99cee/TextAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0092050B-4332-4E0F-9C5F-461A25D2615B/42/9614f244/IPointerDownHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/9e/1d4f57d3/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -97,11 +98,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SandboxItemSlot.cs" />
       </list>
     </option>
   </component>
@@ -181,14 +183,7 @@
       <workItem from="1637351437441" duration="784000" />
       <workItem from="1637398909808" duration="2635000" />
       <workItem from="1637435356354" duration="622000" />
-      <workItem from="1637472921497" duration="6094000" />
-    </task>
-    <task id="LOCAL-00004" summary="Move WoodenPlankTile to Ground SortingLayer">
-      <created>1634674627445</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1634674627445</updated>
+      <workItem from="1637472921497" duration="9187000" />
     </task>
     <task id="LOCAL-00005" summary="Added PlayerBehaviour">
       <created>1634675093127</created>
@@ -526,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637476521336</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Added Inventory list builder">
+      <created>1637503645214</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1637503645214</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Map and MapIO, map load and save" />
     <MESSAGE value="Added save and load map world, and input field for map name" />
     <MESSAGE value="Added TileMap Dispose(), he call when reload map" />
     <MESSAGE value="Added MapIO MapSaveExtension const" />
@@ -600,7 +601,8 @@
     <MESSAGE value="Added ItemSlot Drag items" />
     <MESSAGE value="Added Hotbar" />
     <MESSAGE value="Added Inventory layout and UIInput" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Inventory layout and UIInput" />
+    <MESSAGE value="Added Inventory list builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Inventory list builder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -611,6 +613,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="735" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1635686772716" />
+    <state x="707" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1637507711630">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="707" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1080@0.0.1920.1080" timestamp="1637507711630" />
     <state x="92" y="92" width="1736" height="896" key="DiffContextDialog" timestamp="1635754670014">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -679,10 +685,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="390" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1637473847339" />
-    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1637502173486">
+    <state x="727" y="264" key="RiderGenerateDialog" timestamp="1637507153397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637502173486" />
+    <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637507153397" />
     <state x="808" y="250" key="RollbackChangesDialog" timestamp="1637473126443">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -691,14 +697,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1634411889697" />
-    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1635446765151">
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog" timestamp="1637509017757">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635446765151" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637476532547">
+    <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637509017757" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637503653335">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637476532547" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637503653335" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1635755583327">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -8,45 +7,44 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private Image icon;
 
-    public Item Item { get; private set; }
-
     public UnityEvent onSelected;
 
-    private bool _selected;
+    public Item Item { get; private set; }
+    private bool Selected { get; set; }
 
     private void Start()
     {
         SetItem(Item.GetByName("Stick"));
     }
 
-    private void SetItem(Item newItem)
+    public virtual void OnPointerDown(PointerEventData eventData)
     {
-        Item = newItem;
-        icon.color =  Item == null ? Color.clear : Color.white;
-        if (Item != null) icon.sprite =  Item.Sprite;
-    }
-    
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        if (!_selected)
+        if (!Selected)
         {
             Select();
             return;
         }
-        
+
         var cursor = Cursor.Instance;
         if (cursor == null) return;
-        
+
         if (cursor.Empty())
         {
             cursor.SetItem(Item);
             SetItem(null);
         }
-        else
+        else 
         {
             SetItem(cursor.SelectedItem);
             cursor.SetItem(null);
         }
+    }
+
+    private void SetItem(Item newItem)
+    {
+        Item = newItem;
+        icon.color = Item == null ? Color.clear : Color.white;
+        if (Item != null) icon.sprite = Item.Sprite;
     }
 
     public bool Empty()
@@ -56,7 +54,7 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
 
     private void Select()
     {
-        _selected = true;
+        Selected = true;
         onSelected.Invoke();
     }
 }
