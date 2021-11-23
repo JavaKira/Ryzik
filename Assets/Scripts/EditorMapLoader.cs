@@ -17,7 +17,7 @@ public class EditorMapLoader : MonoBehaviour
 
     private void LoadDefault()
     {
-        MapIO.Load(map, DefaultMapName);
+        MapIO.LoadFromResources(map, DefaultMapName);
     }
     
     public void Load()

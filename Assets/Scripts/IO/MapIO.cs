@@ -1,5 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace IO
 {
@@ -33,6 +35,28 @@ namespace IO
             fileStream.Close();
             reader.Close();
             return map;
+        }
+        
+        public static Map LoadFromResources(Map map, string fileName)
+        {
+            var text = Resources.Load<TextAsset>("Maps/" + fileName);
+            var stream = new MemoryStream(text.bytes);
+            var reader = new BinaryReader(stream);
+            var reads = new Reads(reader);
+            map.Tilemap.Dispose();
+            map.Read(reads);
+            reader.Close();
+            return map;
+        }
+        
+        public static Stream GetStreamFromString(string s)
+        {
+            var stream = new MemoryStream();
+            var writer = new StreamWriter(stream);
+            writer.Write(s);
+            writer.Flush();
+            stream.Position = 0;
+            return stream;
         }
 
         public static FileInfo[] GetMapsList()

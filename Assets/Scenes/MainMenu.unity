@@ -787,6 +787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapName: MainMenuBackgroundMap
   tileMap: {fileID: 647033845}
+  fromResourcesFolder: 1
 --- !u!114 &647033845
 MonoBehaviour:
   m_ObjectHideFlags: 0
