@@ -12,7 +12,7 @@ namespace IO
         public static void Save(TileMap tileMap, string name)
         {
             name += MapSaveExtension;
-            var fileStream = new FileStream(name, FileMode.Create);
+            var fileStream = new FileStream(Application.persistentDataPath + "/" + name, FileMode.Create);
             var writer = new BinaryWriter(fileStream);
             var writes = new Writes(writer);
             
@@ -25,7 +25,7 @@ namespace IO
         public static Map Load(Map map, string fileName)
         {
             fileName += MapSaveExtension;
-            var fileStream = new FileStream(fileName, FileMode.Open);
+            var fileStream = new FileStream(Application.persistentDataPath + "/" + fileName, FileMode.Open);
             var reader = new BinaryReader(fileStream);
             var reads = new Reads(reader);
             map.Tilemap.Dispose();
@@ -61,7 +61,7 @@ namespace IO
 
         public static FileInfo[] GetMapsList()
         {
-            var dir = new DirectoryInfo(Directory.GetCurrentDirectory());
+            var dir = new DirectoryInfo(Application.persistentDataPath);
             return dir.GetFiles("*" + MapSaveExtension);
         }
     }
