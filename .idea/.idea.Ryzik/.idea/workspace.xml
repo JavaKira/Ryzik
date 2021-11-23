@@ -25,9 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added MapIO.LoadFromResources() who load map from Resources Folder">
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added SampleScene inventory button">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DebugWorldLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapAssetImporter.cs" />
@@ -109,6 +109,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MapSaveAsset.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorMapLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -193,21 +194,7 @@
       <workItem from="1637588911944" duration="4947000" />
       <workItem from="1637608837211" duration="1861000" />
       <workItem from="1637638546166" duration="4286000" />
-      <workItem from="1637681366940" duration="8982000" />
-    </task>
-    <task id="LOCAL-00019" summary="Import TextMeshPro">
-      <created>1635334265142</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1635334265142</updated>
-    </task>
-    <task id="LOCAL-00020" summary="added ContentSelectPanel in editor">
-      <created>1635346465944</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1635346465944</updated>
+      <workItem from="1637681366940" duration="13497000" />
     </task>
     <task id="LOCAL-00021" summary="Added block and floor place in editor">
       <created>1635436703625</created>
@@ -538,7 +525,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637691298377</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Fix MapIO Load and Save paths">
+      <created>1637692449149</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1637692449149</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Added SampleScene inventory button">
+      <created>1637693212815</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1637693212815</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,8 +588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fix EditorScene ui" />
-    <MESSAGE value="Added Joystick in editor" />
     <MESSAGE value="Added Item" />
     <MESSAGE value="Added Air Item" />
     <MESSAGE value="Added ItemSlot" />
@@ -612,7 +611,9 @@
     <MESSAGE value="Added Block break" />
     <MESSAGE value="Fixed EditorInput and PlayerBehaviour mousePosition to tile position calculate" />
     <MESSAGE value="Added MapIO.LoadFromResources() who load map from Resources Folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MapIO.LoadFromResources() who load map from Resources Folder" />
+    <MESSAGE value="Fix MapIO Load and Save paths" />
+    <MESSAGE value="Added SampleScene inventory button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SampleScene inventory button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -711,10 +712,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637522950327" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637691300766">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637692451811">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637691300766" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637692451811" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637556531397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

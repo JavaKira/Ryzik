@@ -7,25 +7,34 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] private TileMap tileMap;
     [SerializeField] private Hotbar hotbar;
 
+    private float _mouseDragTime;
+
     private void Update()
     {
-        if (EditorInput.IsMouseOverUI() && hotbar.SelectedSlot == null) return;
+        if (EditorInput.IsMouseOverUI()) return;
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(0))
+            _mouseDragTime += Time.deltaTime;
+        else
+            _mouseDragTime = 0;
+        
+        if (_mouseDragTime > 0.5f)
+        {
+            tileMap.GetTile(
+                (int) ((mousePosition.x + 4) / 8), 
+                (int) ((mousePosition.y + 4) / 8)
+            ).Block = Block.GetAir();
+            
+            return;
+        }
+        
+        if (Input.GetMouseButtonDown(0) && hotbar.SelectedSlot != null)
         {
             tileMap.GetTile(
                     (int) ((mousePosition.x + 4) / 8), 
                     (int) ((mousePosition.y + 4) / 8)
             ).SetIContent(hotbar.SelectedSlot.Item);
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            tileMap.GetTile(
-                    (int) ((mousePosition.x + 4) / 8), 
-                    (int) ((mousePosition.y + 4) / 8)
-            ).Block = Block.GetAir();
         }
     }
     public void Move(Vector2 direction)
