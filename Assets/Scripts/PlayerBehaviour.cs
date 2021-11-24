@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(EditorInput.IsMouseOverUI());
         if (EditorInput.IsMouseOverUI()) return;
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
