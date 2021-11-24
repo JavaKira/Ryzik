@@ -59,10 +59,18 @@ namespace IO
             return stream;
         }
 
-        public static FileInfo[] GetMapsList()
+        public static string[] GetMapsList()
         {
             var dir = new DirectoryInfo(Application.persistentDataPath);
-            return dir.GetFiles("*" + MapSaveExtension);
+            var fileInfos = dir.GetFiles("*" + MapSaveExtension);
+            var names = new string[fileInfos.Length];
+            
+            for (var i = 0; i < fileInfos.Length; i++)
+            {
+                names[i] = fileInfos[i].Name.Replace(fileInfos[i].Extension, "");
+            }
+            
+            return names;
         }
     }
 }

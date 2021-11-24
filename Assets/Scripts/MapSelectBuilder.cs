@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using IO;
 using UnityEngine;
 
@@ -14,8 +16,11 @@ public class MapSelectBuilder : MonoBehaviour
 
     private void Build()
     {
-        var maps = MapIO.GetMapsList();
-        for (var i = 0; i < maps.Length; i++)
+        var maps = new List<string>(MapIO.GetMapsList());
+        
+        maps.Add("EmptyMap");
+        
+        for (var i = 0; i < maps.Count; i++)
         {
             var mapButton = Instantiate(
                 mapButtonPrefab,
@@ -31,7 +36,10 @@ public class MapSelectBuilder : MonoBehaviour
                 0
             );
             
-            mapButton.Build(maps[i].Name.Replace(maps[i].Extension, ""));
+            mapButton.Build(maps[i]);
+            
+            if (maps[i].Equals("EmptyMap"))
+                mapButton.LoadFromResources();
         }
     }
 }
