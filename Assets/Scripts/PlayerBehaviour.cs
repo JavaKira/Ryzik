@@ -12,7 +12,10 @@ public class PlayerBehaviour : MonoBehaviour
     private void Update()
     {
         if (Input.touchCount == 0) return;
+        
         var touch = Input.GetTouch(Input.touchCount - 1);
+        if (EditorInput.IsMouseOverUI(touch.fingerId)) return;
+        
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(touch.position);
 
         if (touch.phase == TouchPhase.Stationary)
