@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
+    public static Game Instance;
+    
     private static string _lastMapName;
     private static bool _lastMapFromResources;
+    private bool _pause;
 
     private void Awake()
     {
+        Instance = this;
         Content.Init();
         
         if (_lastMapName != null)
@@ -29,5 +33,22 @@ public class Game : MonoBehaviour
     {
         _lastMapName = name;
         SceneManager.LoadScene("SampleScene");
+    }
+
+    public void Pause()
+    {
+        _pause = true;
+        Time.timeScale = 0;
+    }
+
+    public void Resume()
+    {
+        _pause = false;
+        Time.timeScale = 1;
+    }
+
+    public bool IsPause()
+    {
+        return _pause;
     }
 }

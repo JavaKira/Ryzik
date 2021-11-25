@@ -11,7 +11,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (Input.touchCount == 0) return;
+        if (Game.Instance.IsPause() || Input.touchCount == 0) return;
         
         var touch = Input.GetTouch(Input.touchCount - 1);
         if (EditorInput.IsMouseOverUI(touch.fingerId)) return;

@@ -37,6 +37,7 @@
           <e p="MapButton.cs" t="Include" />
           <e p="MapSelectBuilder.cs" t="Include" />
           <e p="ObjectPurse.cs" t="Include" />
+          <e p="PausePanel.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="PlayerJoystickInspector.cs" t="Include" />
           <e p="SandboxInventoryBuilder.cs" t="Include" />
