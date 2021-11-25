@@ -46,6 +46,11 @@ public class EditorInput : MonoBehaviour
     {
         return EventSystem.current.IsPointerOverGameObject();
     }
+    
+    public static bool IsMouseOverUI(int touchID)
+    {
+        return EventSystem.current.IsPointerOverGameObject(touchID);
+    }
 
     private void Move(Vector3 direction)
     {

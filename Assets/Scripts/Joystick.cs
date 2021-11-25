@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUpHandler
+public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUpHandler, IPointerDownHandler
 {
     [SerializeField] private GameObject cursor;
 
+    private int _touchID = -1;
+    
     public GameObject Cursor
     {
         get => cursor;
@@ -15,6 +17,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUp
 
     private void ClearCursor()
     {
+        _touchID = -1;
         ((RectTransform)cursor.transform).localPosition = new Vector3(0, 0, 0);
     }
 
@@ -51,7 +54,9 @@ public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUp
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 mousePosition = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        var position = Input.GetTouch(_touchID).position;
+        Vector3 mousePosition =
+            new Vector3(position.x, position.y) - Camera.main.WorldToScreenPoint(transform.position);
 
         SetCursorPosition(mousePosition.x,
             mousePosition.y);
@@ -65,5 +70,11 @@ public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUp
     public void OnEndDrag(PointerEventData eventData)
     {
         ClearCursor();
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (_touchID == -1)
+            _touchID = Input.touchCount - 1;
     }
 }

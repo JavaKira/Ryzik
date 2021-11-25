@@ -11,11 +11,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(EditorInput.IsMouseOverUI());
-        if (EditorInput.IsMouseOverUI()) return;
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.touchCount == 0) return;
+        var touch = Input.GetTouch(Input.touchCount - 1);
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(touch.position);
 
-        if (Input.GetMouseButton(0))
+        if (touch.phase == TouchPhase.Stationary)
             _mouseDragTime += Time.deltaTime;
         else
             _mouseDragTime = 0;
@@ -30,7 +30,7 @@ public class PlayerBehaviour : MonoBehaviour
             return;
         }
         
-        if (Input.GetMouseButtonDown(0) && hotbar.SelectedSlot != null)
+        if (touch.phase == TouchPhase.Began && hotbar.SelectedSlot != null)
         {
             tileMap.GetTile(
                     (int) ((mousePosition.x + 4) / 8), 
