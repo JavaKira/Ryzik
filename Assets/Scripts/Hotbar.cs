@@ -12,6 +12,8 @@ public class Hotbar : MonoBehaviour
     private void Start()
     {
         _itemNameText = GetComponentInChildren<TMP_Text>();
+        _itemNameText.text = "";
+        
         _slots = GetComponentsInChildren<ItemSlot>();
 
         foreach (var slot in _slots)
@@ -19,9 +21,8 @@ public class Hotbar : MonoBehaviour
             slot.onSelected.AddListener(() =>
             {
                 SelectedSlot = slot;
-                
-                if (!slot.Empty()) 
-                    _itemNameText.SetText(slot.Item.name);
+
+                _itemNameText.SetText(!slot.Empty() ? slot.Item.name : "");
 
                 foreach (var itemSlot in _slots)
                 {

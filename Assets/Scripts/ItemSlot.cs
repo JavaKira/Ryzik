@@ -38,6 +38,7 @@ public class ItemSlot : MonoBehaviour, IPointerDownHandler
         {
             SetItem(cursor.SelectedItem);
             cursor.SetItem(null);
+            Select();
         }
     }
 
