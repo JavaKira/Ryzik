@@ -32,6 +32,7 @@ public class Game : MonoBehaviour
     public static void Open(string name, bool mapFromResources)
     {
         _lastMapName = name;
+        _lastMapFromResources = mapFromResources;
         SceneManager.LoadScene("SampleScene");
     }
 
