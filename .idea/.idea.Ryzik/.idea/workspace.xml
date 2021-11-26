@@ -25,10 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Fix Game mapFromResources load">
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added ItemSlot Select() call when she accept item">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,14 +199,8 @@
       <workItem from="1637728064477" duration="6507000" />
       <workItem from="1637781106434" duration="599000" />
       <workItem from="1637812015882" duration="2034000" />
-      <workItem from="1637840161183" duration="13091000" />
-    </task>
-    <task id="LOCAL-00028" summary="Added save and load map world, and input field for map name">
-      <created>1635788502641</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1635788502641</updated>
+      <workItem from="1637840161183" duration="14407000" />
+      <workItem from="1637922597516" duration="1215000" />
     </task>
     <task id="LOCAL-00029" summary="Added save and load map world, and input field for map name">
       <created>1635788592867</created>
@@ -546,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637858612567</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Added ItemSlot Select() call when she accept item">
+      <created>1637868563444</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1637868563444</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Inventory layout and UIInput" />
     <MESSAGE value="Added Inventory list builder" />
     <MESSAGE value="Added SandboxItemSlot" />
     <MESSAGE value="Fix ItemSlot item drag" />
@@ -620,7 +618,8 @@
     <MESSAGE value="fixed PlayerBehaviour IsMouseOverUI check" />
     <MESSAGE value="Added SampleScene and Editor pause panel" />
     <MESSAGE value="Fix Game mapFromResources load" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Game mapFromResources load" />
+    <MESSAGE value="Added ItemSlot Select() call when she accept item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ItemSlot Select() call when she accept item" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -719,10 +718,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637522950327" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637858616518">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637868565184">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637858616518" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637868565184" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637556531397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
