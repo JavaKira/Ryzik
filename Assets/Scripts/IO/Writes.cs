@@ -20,5 +20,10 @@ namespace IO
         {
             _output.Write(f);
         }
+
+        public void String(string s)
+        {
+            _output.Write(s);
+        }
     }
 }

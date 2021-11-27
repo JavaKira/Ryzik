@@ -10,16 +10,6 @@ public static class Content
         _contentList.AddRange(Block.GetAll());
         _contentList.AddRange(Floor.GetAll());
         _contentList.AddRange(Item.GetAll());
-         
-        for (var i = 0; i < _contentList.Count; i++)
-        {
-            _contentList[i].SetID(i);
-        }
-    }
-    
-    public static T GetByID<T>(int id) where T : IContent
-    {
-        return (T) _contentList[id];
     }
 
     public static List<T> GetByType<T>() where T : IContent

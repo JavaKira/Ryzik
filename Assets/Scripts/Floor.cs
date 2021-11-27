@@ -3,9 +3,12 @@
 public class Floor : MonoBehaviour, IMappableContent
 {
     [SerializeField] private Sprite sprite;
-    
-    public int id;
     public Sprite Sprite => sprite;
+    
+    public string GetName()
+    {
+        return "floor." + name;
+    }
     
     public static Floor GetAir()
     {
@@ -14,21 +17,11 @@ public class Floor : MonoBehaviour, IMappableContent
     
     public static Floor GetByName(string name)
     {
-        return Resources.Load<Floor>("floors/" + name);
+        return Resources.Load<Floor>("floors/" + name.Replace("floor.", ""));
     }
     
     public static Floor[] GetAll()
     {
         return Resources.LoadAll<Floor>("floors/");
-    }
-
-    public int GetID()
-    {
-        return id;
-    }
-
-    public void SetID(int newId)
-    {
-        id = newId;
     }
 }

@@ -20,5 +20,10 @@ namespace IO
         {
             return _input.ReadInt32();
         }
+
+        public string String()
+        {
+            return _input.ReadString();
+        }
     }
 }

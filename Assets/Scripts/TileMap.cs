@@ -8,7 +8,7 @@ public class TileMap : MonoBehaviour
     [SerializeField] private float tilesGap;
     [SerializeField] private TileBehaviour tilePrefab;
 
-    private Tile[][] _tiles;
+    public Tile[][] _tiles;
     private int _width, _height;
 
     public Vector2Int Size

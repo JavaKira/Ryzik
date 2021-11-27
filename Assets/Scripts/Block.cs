@@ -7,6 +7,11 @@ public class Block : Item, IMappableContent
     
     public Sprite Sprite => sprite;
     public BoxCollider2D Bounds => bounds;
+    
+    public override string GetName()
+    {
+        return "block." + name;
+    }
 
     public static Block GetAir()
     {
@@ -15,7 +20,7 @@ public class Block : Item, IMappableContent
     
     public new static Block GetByName(string name)
     {
-        return Resources.Load<Block>("blocks/" + name);
+        return Resources.Load<Block>("blocks/" + name.Replace("block.", ""));
     }
 
     public new static Block[] GetAll()

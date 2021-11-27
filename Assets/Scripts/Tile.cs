@@ -40,14 +40,19 @@ public class Tile
     
     public void Read(Reads reads)
     {
-        _block = Content.GetByID<Block>(reads.Int());
-        _floor = Content.GetByID<Floor>(reads.Int());
+        var block = Block.GetByName(reads.String());
+        if (block != null)
+            _block = block;
+        
+        var floor = Floor.GetByName(reads.String());
+        if (floor != null)
+            _floor = floor;
     }
 
     public void Write(Writes writes)
     {
-        writes.Int(_block.GetID());
-        writes.Int(_floor.GetID());
+        writes.String(_block.GetName());
+        writes.String(_floor.GetName());
     }
 
     public void SetIContent(IContent content)
