@@ -25,23 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Added screen Blackout for PausePanel and Inventory">
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Change id to name">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/MainMenuBackgroundMap.bytes" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Maps/MainMenuBackgroundMap.bytes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Content.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IO/Reads.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IO/Reads.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IO/Writes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IO/Writes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Atlas.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Atlas.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Atlas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Atlas.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +111,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Content.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TileMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DebugWorldLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Floor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TileBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -216,14 +206,8 @@
       <workItem from="1637812015882" duration="2034000" />
       <workItem from="1637840161183" duration="14407000" />
       <workItem from="1637922597516" duration="4458000" />
-      <workItem from="1638006206016" duration="8066000" />
-    </task>
-    <task id="LOCAL-00030" summary="Added TileMap Dispose(), he call when reload map">
-      <created>1635789253346</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1635789253346</updated>
+      <workItem from="1638006206016" duration="11296000" />
+      <workItem from="1638078277309" duration="2846000" />
     </task>
     <task id="LOCAL-00031" summary="Added MapIO MapSaveExtension const">
       <created>1635789571524</created>
@@ -561,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637931434048</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="Change id to name">
+      <created>1638034062954</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1638034062955</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added SandboxItemSlot" />
     <MESSAGE value="Fix ItemSlot item drag" />
     <MESSAGE value="Fix SandboxInventoryBuilder, will place an item into slot" />
     <MESSAGE value="Fix Hotbar ItemSlot select" />
@@ -635,7 +625,8 @@
     <MESSAGE value="Fix Game mapFromResources load" />
     <MESSAGE value="Added ItemSlot Select() call when she accept item" />
     <MESSAGE value="Added screen Blackout for PausePanel and Inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added screen Blackout for PausePanel and Inventory" />
+    <MESSAGE value="Change id to name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change id to name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -722,10 +713,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="727" y="264" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637591838177" />
-    <state x="808" y="250" key="RollbackChangesDialog" timestamp="1638012661614">
+    <state x="808" y="250" key="RollbackChangesDialog" timestamp="1638034967038">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="808" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638012661614" />
+    <state x="808" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1638034967038" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1634411889697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -734,10 +725,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637933284814" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1637931439714">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1638034064797">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1637931439714" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1638034064797" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637556531397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

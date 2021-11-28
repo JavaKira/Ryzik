@@ -33,6 +33,10 @@ public class TileBehaviour : MonoBehaviour
         {
             bounds.enabled = true;
             bounds.size = _tile.Block.Bounds.size;
+            bounds.offset = _tile.Block.Bounds.offset;
+
+            var size = new Vector2(_tile.Block.Sprite.bounds.size.x / 8, _tile.Block.Sprite.bounds.size.y / 8);
+            ((RectTransform) _block.transform).position += new Vector3((size.x - 1) * 4, (size.y - 1) * 4);
         }
         else
         {
