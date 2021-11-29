@@ -2,12 +2,12 @@
 
 namespace Content
 {
-    public class Floor : MonoBehaviour, IMappableContent
+    public class Floor : Item, IMappableContent
     {
         [SerializeField] private Sprite sprite;
         public Sprite Sprite => sprite;
     
-        public string GetName()
+        public override string GetName()
         {
             return "floor." + name;
         }
@@ -17,12 +17,12 @@ namespace Content
             return GetByName("Air");
         }
     
-        public static Floor GetByName(string name)
+        public new static Floor GetByName(string name)
         {
             return Resources.Load<Floor>("floors/" + name.Replace("floor.", ""));
         }
     
-        public static Floor[] GetAll()
+        public new static Floor[] GetAll()
         {
             return Resources.LoadAll<Floor>("floors/");
         }

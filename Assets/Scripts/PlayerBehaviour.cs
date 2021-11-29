@@ -27,10 +27,15 @@ public class PlayerBehaviour : MonoBehaviour
         
         if (_mouseDragTime > 0.5f)
         {
-            tileMap.GetTile(
-                (int) ((mousePosition.x + 4) / 8), 
+            var tile = tileMap.GetTile(
+                (int) ((mousePosition.x + 4) / 8),
                 (int) ((mousePosition.y + 4) / 8)
-            ).Block = Block.GetAir();
+            );
+            
+            if (tile.Block.name != "Air")
+                tile.Block = Block.GetAir();
+            else if (tile.Floor.name != "Air")
+                tile.Floor = Floor.GetAir();
             
             return;
         }

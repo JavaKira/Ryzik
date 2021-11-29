@@ -25,59 +25,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Update block.WoodenPlank and floor.WoodenPlank sprite">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Content.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="a5e937c1-83e7-4e86-b2f7-c2300997e0e8" name="Default Changelist" comment="Fixed Tile and Player Draw, and added Sprite Material">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ryzik/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Block.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Block.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Block.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Content.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Content.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Content.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Content.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentSelectBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ContentSelectBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentSelectBuilder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ContentSelectBuilder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ContentSelectItemBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ContentSelectItemBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ContentSelectItemBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorButtonBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/EditorButtonBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorButtonBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/EditorButtonBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick/EditorCameraJoystickInspector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorCameraJoystickInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick/EditorCameraJoystickInspector.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Floor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Hotbar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hotbar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Hotbar.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/IContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IContent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/IContent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IMappableContent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/IMappableContent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IMappableContent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/IMappableContent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Item.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ItemSlot.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joystick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick/Joystick.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Joystick.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick/Joystick.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuPanelBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuPanelBehaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MapButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MapButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSelectBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MapSelectBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapSelectBuilder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MapSelectBuilder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PausePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PausePanel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PausePanel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Floors/Air.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Floors/Air.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Floors/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Floors/Grass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Floors/Sand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Floors/Sand.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Floors/SandBrick.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Floors/SandBrick.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Floors/Stone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Floors/Stone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Floors/WoodenPlank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Floors/WoodenPlank.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerJoystickInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick/PlayerJoystickInspector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerJoystickInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Joystick/PlayerJoystickInspector.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SandboxInventoryBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SandboxInventoryBuilder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SandboxInventoryBuilder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SandboxItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SandboxItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SandboxItemSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SandboxItemSlot.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,17 +54,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/2f/8ed02b65/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/ProjectSettings/QualitySettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/36/0925e76c/BinaryReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/0e/e7f99cee/TextAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/9e/1d4f57d3/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AF207EC-D210-4462-8913-F7CC589986AE/15/051a3fee/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/19/70be14cc/BinaryWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/ce/1aa9d4f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/87/9d9e51d0/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/95/b7b6dca8/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/sefce/Ryzik/Assets/Prefabs/Tile.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0092050B-4332-4E0F-9C5F-461A25D2615B/42/9614f244/IPointerDownHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/sefce/Ryzik/Assets/Prefabs/ContentSelectItem.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/14/338f265e/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
@@ -114,9 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/IO/TileMapIO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DebugWorldSaver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EditorSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorMapSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuPanelBehaviour.cs" />
@@ -142,7 +102,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IO/MapIO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Joystick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PausePanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EditorInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
@@ -165,6 +124,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MapButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuPanelBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Content/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Debug/DebugWorldLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Debug/DebugWorldSaver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Content/Floor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -258,21 +221,7 @@
       <workItem from="1638006206016" duration="11296000" />
       <workItem from="1638078277309" duration="10179000" />
       <workItem from="1638157952950" duration="2152000" />
-      <workItem from="1638190334772" duration="2279000" />
-    </task>
-    <task id="LOCAL-00036" summary="Added MapSelectBuilder">
-      <created>1635840256813</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1635840256813</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Added MainMenu game start listener for buttons">
-      <created>1637075257525</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1637075257525</updated>
+      <workItem from="1638190334772" duration="5798000" />
     </task>
     <task id="LOCAL-00038" summary="Added GetMapList() and MapSelectBuilder build map list">
       <created>1637090283980</created>
@@ -603,7 +552,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638191498350</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Sorted scripts">
+      <created>1638192806348</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1638192806348</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Fixed Tile and Player Draw, and added Sprite Material">
+      <created>1638193598595</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1638193598595</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,8 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Remove build item slot for air items in SandboxInventoryBuilder" />
-    <MESSAGE value="Added color change when ItemSlot selected" />
     <MESSAGE value="Added Blocks and Floors, update map saves" />
     <MESSAGE value="Fix EditorScene camera move speed" />
     <MESSAGE value="Added Block place" />
@@ -677,7 +638,9 @@
     <MESSAGE value="Fixed EditorScene ContentSelect ScrollView content size" />
     <MESSAGE value="Fixed MainMenu MapSelectBuilder content size and MapButton position" />
     <MESSAGE value="Update block.WoodenPlank and floor.WoodenPlank sprite" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update block.WoodenPlank and floor.WoodenPlank sprite" />
+    <MESSAGE value="Sorted scripts" />
+    <MESSAGE value="Fixed Tile and Player Draw, and added Sprite Material" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Tile and Player Draw, and added Sprite Material" />
   </component>
   <component name="WindowStateProjectService">
     <state x="705" y="365" key="#Notifications" timestamp="1634414073923">
@@ -776,10 +739,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="92" y="92" width="1736" height="896" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1637933284814" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1638191500330">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1638193603083">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1638191500330" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1638193603083" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637556531397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
