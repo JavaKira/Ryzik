@@ -41,11 +41,11 @@ TagManager:
   - name: Floor
     uniqueID: 864377841
     locked: 0
-  - name: Block
-    uniqueID: 3468568805
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Block
+    uniqueID: 3468568805
     locked: 0
   - name: UI
     uniqueID: 1432623341
