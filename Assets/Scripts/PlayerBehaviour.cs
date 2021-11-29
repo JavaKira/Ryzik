@@ -1,4 +1,6 @@
 using System;
+using Content;
+using UI;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour

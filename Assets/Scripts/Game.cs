@@ -14,7 +14,7 @@ public class Game : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Content.Init();
+        Content.Content.Init();
         
         if (_lastMapName != null)
         {
