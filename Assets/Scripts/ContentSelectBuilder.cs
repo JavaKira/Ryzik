@@ -30,5 +30,10 @@ public class ContentSelectBuilder : MonoBehaviour
              );
              item.GetComponent<ContentSelectItemBehaviour>().Content = ((MonoBehaviour) items[i]).GetComponent<IContent>();
          }
+         
+         ((RectTransform) transform).sizeDelta = new Vector2(
+             ((RectTransform) transform).sizeDelta.x,
+             (((RectTransform) contentSelectItemPrefab.transform).sizeDelta.y + gap) * items.Count
+         );
      }
 }
