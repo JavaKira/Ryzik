@@ -41,5 +41,10 @@ public class MapSelectBuilder : MonoBehaviour
             if (maps[i].Equals("EmptyMap"))
                 mapButton.LoadFromResources();
         }
+        
+        ((RectTransform) transform).sizeDelta = new Vector2(
+            ((RectTransform) transform).sizeDelta.x,
+            (((RectTransform) mapButtonPrefab.transform).sizeDelta.y + gap) * maps.Count
+        );
     }
 }
