@@ -10,6 +10,9 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] private Hotbar hotbar;
 
     private float _mouseDragTime;
+    private Vector3 _oldPosition;
+
+    public Vector2 Speed => _oldPosition - transform.position;
 
     private void Update()
     {
@@ -50,6 +53,8 @@ public class PlayerBehaviour : MonoBehaviour
     }
     public void Move(Vector2 direction)
     {
+        _oldPosition = transform.position;
+        
         var moveDirectionForce = new Vector3(direction.x, direction.y , 0.0f);
         moveDirectionForce *= speed;
 

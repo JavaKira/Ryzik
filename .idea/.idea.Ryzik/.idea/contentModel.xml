@@ -31,6 +31,7 @@
           </e>
           <e p="Map.cs" t="Include" />
           <e p="ObjectPurse.cs" t="Include" />
+          <e p="PlayerAnimationInspector.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileBehaviour.cs" t="Include" />
