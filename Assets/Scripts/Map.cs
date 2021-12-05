@@ -1,9 +1,12 @@
 ﻿using System;
+using Content;
 using IO;
 using UnityEngine;
 
 public class Map : MonoBehaviour
 {
+    public static Map Instance;
+    
     private TileMap _tilemap;
 
     public string Name { get; set; }
@@ -12,7 +15,10 @@ public class Map : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         _tilemap = GetComponentInChildren<TileMap>();
+
+        Mob.GetByName("cockroach").Spawn(new Vector2());
     }
 
     public void Read(Reads reads)
