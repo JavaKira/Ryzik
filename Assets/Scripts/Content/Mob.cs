@@ -13,6 +13,7 @@ namespace Content
         {
             var instance = Instantiate(this, Map.Instance.transform);
             instance.transform.position = new Vector3(position.x, position.y);
+            Map.Instance.Mobs.Add(instance);
             return instance;
         }
 

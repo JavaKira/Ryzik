@@ -8,15 +8,18 @@ public class Map : MonoBehaviour
     public static Map Instance;
     
     private TileMap _tilemap;
+    private Mobs _mobs;
 
     public string Name { get; set; }
 
     public TileMap Tilemap => _tilemap;
+    public Mobs Mobs => _mobs;
 
     private void Awake()
     {
         Instance = this;
         _tilemap = GetComponentInChildren<TileMap>();
+        _mobs = new Mobs();
 
         Mob.GetByName("cockroach").Spawn(new Vector2());
     }
