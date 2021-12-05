@@ -6,7 +6,7 @@ namespace Content
     {
         public string GetName()
         {
-            return "mob." + name;
+            return "mob." + name.Replace("(Clone)", "");
         }
 
         public Mob Spawn(Vector2 position)

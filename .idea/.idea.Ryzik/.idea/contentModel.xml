@@ -43,6 +43,7 @@
           <e p="UI" t="Include">
             <e p="CampaignButtonBehaviour.cs" t="Include" />
             <e p="CampaignPoint.cs" t="Include" />
+            <e p="CockroachesAliveBar.cs" t="Include" />
             <e p="ContentSelectBuilder.cs" t="Include" />
             <e p="ContentSelectItemBehaviour.cs" t="Include" />
             <e p="EditorButtonBehaviour.cs" t="Include" />
