@@ -26,7 +26,7 @@ namespace UI
 
         private void Open()
         {
-            Game.Open(_title, true);
+            Game.Open(_title, true, "EatDefenseScene");
         }
     }
 }

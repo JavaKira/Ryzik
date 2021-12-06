@@ -29,11 +29,11 @@ public class Game : MonoBehaviour
         _lastMapName = string.Empty;
     }
     
-    public static void Open(string name, bool mapFromResources)
+    public static void Open(string name, bool mapFromResources, string sceneName = "SampleScene")
     {
         _lastMapName = name;
         _lastMapFromResources = mapFromResources;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void Pause()
