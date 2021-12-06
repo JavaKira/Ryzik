@@ -57,6 +57,7 @@
             <e p="MainMenuPanelBehaviour.cs" t="Include" />
             <e p="MapButton.cs" t="Include" />
             <e p="MapSelectBuilder.cs" t="Include" />
+            <e p="MobHealthBar.cs" t="Include" />
             <e p="PausePanel.cs" t="Include" />
             <e p="SandboxInventoryBuilder.cs" t="Include" />
             <e p="SandboxItemSlot.cs" t="Include" />

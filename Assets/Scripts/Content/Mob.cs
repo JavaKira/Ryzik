@@ -1,15 +1,22 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Content
 {
     public class Mob : MonoBehaviour, IContent
     {
-        [SerializeField] private int health;
+        [SerializeField] private int maxHealth;
 
-        private int _health;
+        public int MaxHealth => maxHealth;
+        public int Health { get; private set; }
 
         public UnityEvent healthChanged = new UnityEvent();
+
+        private void Start()
+        {
+            Heal(maxHealth);
+        }
 
         public string GetName()
         {
@@ -26,14 +33,14 @@ namespace Content
 
         public void ApplyDamage(int amount)
         {
-            _health -= amount;
+            Health -= amount;
             healthChanged.Invoke();
         }
 
         public void Heal(int amount)
         {
-            _health += amount;
-            _health = Mathf.Min(_health, health);
+            Health += amount;
+            Health = Mathf.Min(Health, maxHealth);
             healthChanged.Invoke();
         }
 

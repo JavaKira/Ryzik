@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9013474862281283553}
   - component: {fileID: 1279220708436109956}
   m_Layer: 0
-  m_Name: cockroach
+  m_Name: Cockroach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,3 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069f7241562e4b12a48b606ce05dba1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 50
+  healthChanged:
+    m_PersistentCalls:
+      m_Calls: []
