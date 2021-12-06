@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Content
 {
     public class Mob : MonoBehaviour, IContent
     {
+        [SerializeField] private int health;
+
+        private int _health;
+
+        public UnityEvent healthChanged = new UnityEvent();
+
         public string GetName()
         {
             return "mob." + name.Replace("(Clone)", "");
@@ -15,6 +22,19 @@ namespace Content
             instance.transform.position = new Vector3(position.x, position.y);
             Map.Instance.Mobs.Add(instance);
             return instance;
+        }
+
+        public void ApplyDamage(int amount)
+        {
+            _health -= amount;
+            healthChanged.Invoke();
+        }
+
+        public void Heal(int amount)
+        {
+            _health += amount;
+            _health = Mathf.Min(_health, health);
+            healthChanged.Invoke();
         }
 
         public static Mob GetByName(string name)
