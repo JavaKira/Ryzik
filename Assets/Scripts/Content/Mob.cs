@@ -7,6 +7,7 @@ namespace Content
     public class Mob : MonoBehaviour, IContent
     {
         [SerializeField] private int maxHealth;
+        [SerializeField] private int enemyCollisionDamage;
 
         public int MaxHealth => maxHealth;
         public int Health { get; private set; }
@@ -16,6 +17,19 @@ namespace Content
         private void Start()
         {
             Heal(maxHealth);
+        }
+        
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            var mob = other.gameObject.GetComponent<Mob>();
+            
+            if (mob != null)
+                Attack(mob);
+        }
+
+        private void Attack(Mob mob)
+        {
+            mob.ApplyDamage(enemyCollisionDamage);
         }
 
         public string GetName()
