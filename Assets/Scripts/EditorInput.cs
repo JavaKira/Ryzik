@@ -9,7 +9,6 @@ public class EditorInput : MonoBehaviour
 
     [SerializeField] private TileMap tileMap;
     [SerializeField] private GameObject cameraPoint;
-    [SerializeField] private GameObject pausePanel;
     [SerializeField] private float moveSpeed;
 
     public IContent SelectedContent { get; set; }
@@ -36,21 +35,7 @@ public class EditorInput : MonoBehaviour
                 (int) ((mousePosition.y + 4) / 8)
             ).SetIContent(SelectedContent);
         }
-        
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (Game.Instance.IsPause())
-            {
-                Game.Instance.Resume();
-            }
-            else
-            {
-                Game.Instance.Pause();
-            }
-            
-            pausePanel.SetActive(!pausePanel.activeSelf);
-        }
-        
+
         if (Input.GetKey(KeyCode.W)) Move(Vector2.up);
         
         if (Input.GetKey(KeyCode.S)) Move(Vector2.down);

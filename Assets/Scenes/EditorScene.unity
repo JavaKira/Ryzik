@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 312359150}
   - component: {fileID: 312359149}
   - component: {fileID: 312359148}
+  - component: {fileID: 312359152}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -685,6 +686,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &312359152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312359147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301fe16b3d02463281941ea872c16daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 29650553}
 --- !u!1 &344431455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +3100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileMap: {fileID: 1913846917}
   cameraPoint: {fileID: 1606440005}
-  pausePanel: {fileID: 29650553}
   moveSpeed: 20
 --- !u!4 &2111872519
 Transform:

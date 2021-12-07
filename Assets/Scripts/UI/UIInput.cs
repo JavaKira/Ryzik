@@ -6,27 +6,15 @@ namespace UI
     {
         [SerializeField] private Joystick.Joystick joystick;
         [SerializeField] private GameObject inventory;
-        [SerializeField] private GameObject pausePanel;
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (inventory.activeSelf)
-                    CloseInventory();
-                else
-                    OpenInventory();
-            }
-
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (Game.Instance.IsPause())
-                    Game.Instance.Resume();
-                else
-                    Game.Instance.Pause();
-
-                pausePanel.SetActive(!pausePanel.activeSelf);
-            }
+            if (!Input.GetKeyDown(KeyCode.E)) return;
+            
+            if (inventory.activeSelf)
+                CloseInventory();
+            else
+                OpenInventory();
         }
 
         public void OpenInventory()

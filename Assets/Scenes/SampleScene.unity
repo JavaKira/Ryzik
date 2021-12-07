@@ -2194,6 +2194,7 @@ GameObject:
   - component: {fileID: 1433743025}
   - component: {fileID: 1433743024}
   - component: {fileID: 1433743028}
+  - component: {fileID: 1433743029}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2300,6 +2301,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 1393775508}
   inventory: {fileID: 1677721542}
+--- !u!114 &1433743029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433743023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301fe16b3d02463281941ea872c16daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   pausePanel: {fileID: 50499705}
 --- !u!1 &1474092627
 GameObject:
