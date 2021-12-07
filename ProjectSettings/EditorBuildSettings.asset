@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CampaignRoadScene.unity
     guid: 2254c8c08ea2ee54ca3512ac33fa7d05
+  - enabled: 1
+    path: Assets/Scenes/EatDefenseScene.unity
+    guid: 35dca14cf3439ae4ca90ce094c4c6d25
   m_configObjects: {}

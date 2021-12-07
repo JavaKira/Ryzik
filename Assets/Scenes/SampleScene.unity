@@ -3237,6 +3237,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1801419255}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1996014395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996014394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d389bf320a64b9a9faad2c8048fab22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileMap: {fileID: 2131959629}
+  hotbar: {fileID: 604263619}
 --- !u!114 &1996014400 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9146813915275282972, guid: 381d4eae447f472418bdfa54515585e6,

@@ -37,6 +37,7 @@
           <e p="ObjectPurse.cs" t="Include" />
           <e p="PlayerAnimationInspector.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
+          <e p="PlayerTilemapEditor.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileBehaviour.cs" t="Include" />
           <e p="TileMap.cs" t="Include" />
