@@ -12,6 +12,7 @@ namespace Content
             _contentList.AddRange(Block.GetAll());
             _contentList.AddRange(Floor.GetAll());
             _contentList.AddRange(Item.GetAll());
+            _contentList.AddRange(Mob.GetAll());
         }
 
         public static List<T> GetByType<T>() where T : IContent

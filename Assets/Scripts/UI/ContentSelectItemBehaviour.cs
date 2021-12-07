@@ -26,6 +26,7 @@ namespace UI
             {
                 Floor floor => floor.Sprite,
                 Block block => block.Sprite,
+                Mob mob => mob.GetComponent<SpriteRenderer>().sprite,
                 _ => itemImage.sprite
             };
         }

@@ -19,6 +19,7 @@ namespace UI
             var items = new List<IContent>();
             items.AddRange(Block.GetAll());
             items.AddRange(Floor.GetAll());
+            items.AddRange(Mob.GetAll());
 
             for (var i = 0; i < items.Count; i++)
             {

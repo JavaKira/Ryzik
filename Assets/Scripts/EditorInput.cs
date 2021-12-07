@@ -25,31 +25,25 @@ public class EditorInput : MonoBehaviour
 
     private void ProcessInput()
     {
-        if (Game.Instance.IsPause()) return;
+        if (Game.Instance.IsPause() || Input.touchCount == 0) return;
         
-        if (Input.GetMouseButtonDown(0) && !IsMouseOverUI())
+        var touch = Input.GetTouch(Input.touchCount - 1);
+        if (IsMouseOverUI(touch.fingerId)) return;
+        
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (touch.phase == TouchPhase.Began)
         {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            tileMap.GetTile(
-                (int) ((mousePosition.x + 4) / 8), 
-                (int) ((mousePosition.y + 4) / 8)
-            ).SetIContent(SelectedContent);
+            if (SelectedContent is Mob mob)
+                mob.Spawn(mousePosition);
+            else
+                tileMap.GetTile(
+                    (int) ((mousePosition.x + 4) / 8),
+                    (int) ((mousePosition.y + 4) / 8)
+                ).SetIContent(SelectedContent);
         }
-
-        if (Input.GetKey(KeyCode.W)) Move(Vector2.up);
-        
-        if (Input.GetKey(KeyCode.S)) Move(Vector2.down);
-        
-        if (Input.GetKey(KeyCode.A)) Move(Vector2.left);
-        
-        if (Input.GetKey(KeyCode.D)) Move(Vector2.right);
     }
 
-    public static bool IsMouseOverUI()
-    {
-        return EventSystem.current.IsPointerOverGameObject();
-    }
-    
     public static bool IsMouseOverUI(int touchID)
     {
         return EventSystem.current.IsPointerOverGameObject(touchID);
