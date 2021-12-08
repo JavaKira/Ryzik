@@ -12,6 +12,8 @@ public class EditorInput : MonoBehaviour
     [SerializeField] private float moveSpeed;
 
     public IContent SelectedContent { get; set; }
+    
+    private float _mouseDragTime;
 
     private void Start()
     {
@@ -30,11 +32,28 @@ public class EditorInput : MonoBehaviour
         var touch = Input.GetTouch(Input.touchCount - 1);
         if (IsMouseOverUI(touch.fingerId)) return;
         
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (touch.phase == TouchPhase.Stationary)
+            _mouseDragTime += Time.deltaTime;
+        else
+            _mouseDragTime = 0;
+        
+        var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
+        if (_mouseDragTime > 0.5f)
+        {
+            var mobAtMouse = GetMobAtPoint(mousePosition);
+            if (mobAtMouse != null)                       
+            {                                             
+                Map.Instance.Mobs.Remove(mobAtMouse);     
+                Destroy(mobAtMouse.gameObject);           
+            }  
+            
+            return;
+        }
+        
         if (touch.phase == TouchPhase.Began)
         {
-            if (SelectedContent is Mob mob)
+            if (SelectedContent is Mob mob && GetMobAtPoint(mousePosition) == null)
                 mob.Spawn(mousePosition);
             else
                 tileMap.GetTile(
@@ -42,6 +61,12 @@ public class EditorInput : MonoBehaviour
                     (int) ((mousePosition.y + 4) / 8)
                 ).SetIContent(SelectedContent);
         }
+    }
+
+    private static Mob GetMobAtPoint(Vector2 point)
+    {
+        var hit = Physics2D.Raycast(new Vector2(point.x, point.y), Vector2.zero);
+        return hit.collider != null ? hit.collider?.gameObject.GetComponent<Mob>() : null;
     }
 
     public static bool IsMouseOverUI(int touchID)

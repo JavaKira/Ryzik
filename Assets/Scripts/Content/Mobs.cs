@@ -15,6 +15,12 @@ namespace Content
             _mobs.Add(mob);
             Changed.Invoke();
         }
+        
+        public void Remove(Mob mob)
+        {
+            _mobs.Remove(mob);
+            Changed.Invoke();
+        }
 
         public List<Mob> GetByName(string name)
         {
