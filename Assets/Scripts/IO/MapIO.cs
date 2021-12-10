@@ -9,14 +9,14 @@ namespace IO
     {
         private const string MapSaveExtension = ".rusav";
 
-        public static void Save(TileMap tileMap, string name)
+        public static void Save(Map map, string name)
         {
             name += MapSaveExtension;
             var fileStream = new FileStream(Application.persistentDataPath + "/" + name, FileMode.Create);
             var writer = new BinaryWriter(fileStream);
             var writes = new Writes(writer);
             
-            tileMap.Write(writes);
+            map.Write(writes);
             
             fileStream.Close();
             writer.Close();

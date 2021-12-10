@@ -6,11 +6,11 @@ namespace Debug
     public class DebugWorldSaver : MonoBehaviour
     {
         [SerializeField] private string mapName;
-        [SerializeField] private TileMap tileMap;
+        [SerializeField] private Map map;
 
         public void Save()
         {
-            MapIO.Save(tileMap, mapName);
+            MapIO.Save(map, mapName);
         }
     }
 }

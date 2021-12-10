@@ -20,8 +20,6 @@ public class Map : MonoBehaviour
         Instance = this;
         _tilemap = GetComponentInChildren<TileMap>();
         _mobs = new Mobs();
-
-        Mob.GetByName("cockroach").Spawn(new Vector2());
     }
 
     public void Read(Reads reads)
@@ -43,6 +41,8 @@ public class Map : MonoBehaviour
             }
         }
         _tilemap.Build();
+
+        _mobs.Read(reads);
     }
 
     public void Write(Writes writes)
@@ -61,5 +61,7 @@ public class Map : MonoBehaviour
                 _tilemap.GetTile(x, y).Write(writes);
             }
         }
+        
+        _mobs.Write(writes);
     }
 }

@@ -10,7 +10,7 @@ public class EditorMapSaver : MonoBehaviour
     public void Save()
     {
         if (mapNameField.text.Length != 0)
-            MapIO.Save(map.Tilemap, mapNameField.text);
+            MapIO.Save(map, mapNameField.text);
         else
             mapNameField.Select();
     }
