@@ -8,17 +8,18 @@ namespace Content
     {
         [SerializeField] private int maxHealth;
         [SerializeField] private int enemyCollisionDamage;
-
-        [SerializeField] private Weapon weapon;
+        [SerializeField] private Weapon defaultWeapon;
 
         public int MaxHealth => maxHealth;
-        public Weapon Weapon => weapon;
+        public Weapon Weapon { get; private set; }
         public int Health { get; private set; }
 
         public UnityEvent healthChanged = new UnityEvent();
 
         private void Start()
         {
+            Weapon = GetComponentInChildren<WeaponSlot>().Build(defaultWeapon);
+            
             Heal(maxHealth);
         }
         

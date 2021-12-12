@@ -34,6 +34,7 @@
             <e p="Writes.cs" t="Include" />
           </e>
           <e p="Map.cs" t="Include" />
+          <e p="MeleeWeapon.cs" t="Include" />
           <e p="ObjectPurse.cs" t="Include" />
           <e p="PlayerAnimationInspector.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
@@ -53,6 +54,7 @@
             <e p="Joystick" t="Include">
               <e p="EditorCameraJoystickInspector.cs" t="Include" />
               <e p="Joystick.cs" t="Include" />
+              <e p="PlayerAttackJoystickInspector.cs" t="Include" />
               <e p="PlayerJoystickInspector.cs" t="Include" />
             </e>
             <e p="MainMenuPanelBehaviour.cs" t="Include" />
@@ -65,6 +67,8 @@
             <e p="SandboxItemSlot.cs" t="Include" />
             <e p="UIInput.cs" t="Include" />
           </e>
+          <e p="Weapon.cs" t="Include" />
+          <e p="WeaponSlot.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
