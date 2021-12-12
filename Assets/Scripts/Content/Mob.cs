@@ -9,7 +9,10 @@ namespace Content
         [SerializeField] private int maxHealth;
         [SerializeField] private int enemyCollisionDamage;
 
+        [SerializeField] private Weapon weapon;
+
         public int MaxHealth => maxHealth;
+        public Weapon Weapon => weapon;
         public int Health { get; private set; }
 
         public UnityEvent healthChanged = new UnityEvent();

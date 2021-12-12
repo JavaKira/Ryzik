@@ -8,8 +8,15 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] private float speed;
     
     private Vector3 _oldPosition;
+    private Mob _player;
 
     public Vector2 Speed => _oldPosition - transform.position;
+    public Mob Mob => _player;
+
+    private void Start()
+    {
+        _player = GetComponentInChildren<Mob>();
+    }
 
     public void Move(Vector2 direction)
     {
