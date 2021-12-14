@@ -28,6 +28,7 @@
           <e p="EditorMapLoader.cs" t="Include" />
           <e p="EditorMapSaver.cs" t="Include" />
           <e p="Game.cs" t="Include" />
+          <e p="HotbarPlayerInspector.cs" t="Include" />
           <e p="IO" t="Include">
             <e p="MapIO.cs" t="Include" />
             <e p="Reads.cs" t="Include" />
@@ -39,6 +40,7 @@
           <e p="PlayerAnimationInspector.cs" t="Include" />
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="PlayerTilemapEditor.cs" t="Include" />
+          <e p="PostProcess.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileBehaviour.cs" t="Include" />
           <e p="TileMap.cs" t="Include" />
@@ -69,6 +71,9 @@
           </e>
           <e p="Weapon.cs" t="Include" />
           <e p="WeaponSlot.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="Pixelation.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
