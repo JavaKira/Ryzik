@@ -24,8 +24,8 @@ namespace UI
         {
             itemImage.sprite = _content switch
             {
-                Floor floor => floor.Sprite,
-                Block block => block.Sprite,
+                Floor floor => floor.Icon,
+                Block block => block.Icon,
                 Mob mob => mob.GetComponent<SpriteRenderer>().sprite,
                 _ => itemImage.sprite
             };

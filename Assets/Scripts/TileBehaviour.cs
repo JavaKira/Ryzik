@@ -1,4 +1,5 @@
 ﻿using System;
+using Content;
 using UnityEngine;
 
 public class TileBehaviour : MonoBehaviour
@@ -27,22 +28,23 @@ public class TileBehaviour : MonoBehaviour
 
     private void Init()
     {
-        _block.GetComponent<SpriteRenderer>().sprite = _tile.Block.Sprite;
-        var bounds = _block.GetComponent<BoxCollider2D>();
-        if (_tile.Block.Bounds != null)
-        {
-            bounds.enabled = true;
-            bounds.size = _tile.Block.Bounds.size;
-            bounds.offset = _tile.Block.Bounds.offset;
+        SetBlock(_tile.Block);
+        SetFloor(_tile.Floor);
+    }
 
-            var size = new Vector2(_tile.Block.Sprite.bounds.size.x / 8, _tile.Block.Sprite.bounds.size.y / 8);
-            ((RectTransform) _block.transform).position += new Vector3((size.x - 1) * 4, (size.y - 1) * 4);
-        }
-        else
-        {
-            bounds.enabled = false;
-        }
+    private void SetFloor(Floor floor)
+    {
+        if (_floor != null)
+            Destroy(_floor);
+        
+        _floor = Instantiate(floor, transform).gameObject;
+    }
+    
+    private void SetBlock(Block block)
+    {
+        if (_block != null)
+            Destroy(_block);
 
-        _floor.GetComponent<SpriteRenderer>().sprite = _tile.Floor.Sprite;
+        _block = Instantiate(block, transform).gameObject;
     }
 }

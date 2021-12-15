@@ -4,12 +4,9 @@ namespace Content
 {
     public class Floor : Item, IMappableContent
     {
-        [SerializeField] private Sprite sprite;
-        public Sprite Sprite => sprite;
-    
         public override string GetName()
         {
-            return "floor." + name;
+            return "floor." + name.Replace("(Clone)", "");
         }
     
         public static Floor GetAir()

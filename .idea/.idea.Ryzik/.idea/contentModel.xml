@@ -51,6 +51,8 @@
             <e p="ContentSelectBuilder.cs" t="Include" />
             <e p="ContentSelectItemBehaviour.cs" t="Include" />
             <e p="EditorButtonBehaviour.cs" t="Include" />
+            <e p="GamePreviewItem.cs" t="Include" />
+            <e p="GamePreviewListBuilder.cs" t="Include" />
             <e p="Hotbar.cs" t="Include" />
             <e p="ItemSlot.cs" t="Include" />
             <e p="Joystick" t="Include">

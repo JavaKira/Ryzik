@@ -4,15 +4,9 @@ namespace Content
 {
     public class Block : Item, IMappableContent
     {
-        [SerializeField] private Sprite sprite;
-        [SerializeField] private BoxCollider2D bounds;
-    
-        public Sprite Sprite => sprite;
-        public BoxCollider2D Bounds => bounds;
-    
         public override string GetName()
         {
-            return "block." + name;
+            return "block." + name.Replace("(Clone)", "");
         }
 
         public static Block GetAir()
