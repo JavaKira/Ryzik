@@ -9,13 +9,14 @@ public class Game : MonoBehaviour
     
     private static string _lastMapName;
     private static bool _lastMapFromResources;
+    private static string _preservationFileName;
     private bool _pause;
 
     private void Awake()
     {
         Instance = this;
         Content.Content.Init();
-        
+
         if (_lastMapName != null)
         {
             if (_lastMapFromResources)
@@ -25,8 +26,29 @@ public class Game : MonoBehaviour
                 MapIO.Load(FindObjectOfType<Map>(), _lastMapName);
             }
         }
-        
+
         _lastMapName = string.Empty;
+        
+        if (_preservationFileName != null)
+            Load();
+    }
+
+    private static void Load()
+    {
+        PreservationsIO.Load(Map.Instance, _preservationFileName);
+        _preservationFileName = string.Empty;
+    }
+
+    public static void Load(string fileName)
+    {
+        _preservationFileName = fileName;
+        _lastMapName = null;
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void Save()
+    {
+        PreservationsIO.Save(Map.Instance);
     }
     
     public static void Open(string name, bool mapFromResources, string sceneName = "SampleScene")

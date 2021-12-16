@@ -31,6 +31,7 @@
           <e p="HotbarPlayerInspector.cs" t="Include" />
           <e p="IO" t="Include">
             <e p="MapIO.cs" t="Include" />
+            <e p="PreservationsIO.cs" t="Include" />
             <e p="Reads.cs" t="Include" />
             <e p="Writes.cs" t="Include" />
           </e>
@@ -51,8 +52,6 @@
             <e p="ContentSelectBuilder.cs" t="Include" />
             <e p="ContentSelectItemBehaviour.cs" t="Include" />
             <e p="EditorButtonBehaviour.cs" t="Include" />
-            <e p="GamePreviewItem.cs" t="Include" />
-            <e p="GamePreviewListBuilder.cs" t="Include" />
             <e p="Hotbar.cs" t="Include" />
             <e p="ItemSlot.cs" t="Include" />
             <e p="Joystick" t="Include">
@@ -67,6 +66,8 @@
             <e p="MobHealthBar.cs" t="Include" />
             <e p="PausePanel.cs" t="Include" />
             <e p="PausePanelInput.cs" t="Include" />
+            <e p="PreservationItem.cs" t="Include" />
+            <e p="PreservationListBuilder.cs" t="Include" />
             <e p="SandboxInventoryBuilder.cs" t="Include" />
             <e p="SandboxItemSlot.cs" t="Include" />
             <e p="UIInput.cs" t="Include" />
