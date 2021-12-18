@@ -17,7 +17,7 @@ namespace Content
             return Resources.LoadAll<Item>("items/");
         }
 
-        public virtual string GetName()
+        public virtual string GetContentName()
         {
             return "item." + name;
         }

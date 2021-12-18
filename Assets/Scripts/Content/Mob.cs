@@ -36,7 +36,7 @@ namespace Content
             mob.ApplyDamage(enemyCollisionDamage);
         }
 
-        public string GetName()
+        public string GetContentName()
         {
             return "mob." + name.Replace("(Clone)", "");
         }

@@ -4,7 +4,7 @@ namespace Content
 {
     public class Block : Item, IMappableContent
     {
-        public override string GetName()
+        public override string GetContentName()
         {
             return "block." + name.Replace("(Clone)", "");
         }

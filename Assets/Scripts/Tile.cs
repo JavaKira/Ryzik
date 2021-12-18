@@ -52,8 +52,8 @@ public class Tile
 
     public void Write(Writes writes)
     {
-        writes.String(_block.GetName());
-        writes.String(_floor.GetName());
+        writes.String(_block.GetContentName());
+        writes.String(_floor.GetContentName());
     }
 
     public void SetIContent(IContent content)

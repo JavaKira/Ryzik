@@ -2,6 +2,6 @@
 {
     public interface IContent
     {
-        string GetName();
+        string GetContentName();
     }
 }
