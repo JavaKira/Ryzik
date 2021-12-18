@@ -8,7 +8,7 @@ public class TileMap : MonoBehaviour
     [SerializeField] private float tilesGap;
     [SerializeField] private TileBehaviour tilePrefab;
 
-    public Tile[][] _tiles;
+    private Tile[][] _tiles;
     private int _width, _height;
 
     public Vector2Int Size
@@ -71,7 +71,7 @@ public class TileMap : MonoBehaviour
     {
         var createdTile = Instantiate(
             tilePrefab,
-            new Vector2(tile.InTilemapPosition.x, tile.InTilemapPosition.y),
+            new Vector2(tile.InTilemapPosition.x * tilesGap, tile.InTilemapPosition.y * tilesGap),
             Quaternion.identity,
             transform
         );

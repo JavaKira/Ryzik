@@ -36,7 +36,7 @@ public class Map : MonoBehaviour
             {
                 var tile = new Tile();
                 tile.Read(reads);
-                tile.InTilemapPosition = new Vector2(x * _tilemap.TilesGap, y * _tilemap.TilesGap);
+                tile.InTilemapPosition = new Vector2(x, y);
                 _tilemap.SetTile(x, y, tile);
             }
         }
