@@ -7,9 +7,14 @@ public class ObjectPurse : MonoBehaviour
     
     private void FixedUpdate()
     {
+        PurseObject(pursuedObject);
+    }
+
+    private void PurseObject(GameObject pursed)
+    {
         var transform1 = transform;
         var position = transform1.position;
-        var position1 = pursuedObject.transform.position;
+        var position1 = pursed.transform.position;
         var xDifference = (position1.x - position.x) / softness;
         var yDifference = (position1.y - position.y) / softness;
 
@@ -18,5 +23,10 @@ public class ObjectPurse : MonoBehaviour
             position.y + yDifference, 
             position.z);
         transform1.position = position;
+    }
+
+    public void SetPurseObject(GameObject purse)
+    {
+        pursuedObject = purse;
     }
 }

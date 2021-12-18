@@ -43,6 +43,9 @@ public class Map : MonoBehaviour
         _tilemap.Build();
 
         _mobs.Read(reads);
+
+        if (_mobs.GetByName("Ryzik").Count == 0)
+            Mob.GetByName("Ryzik").Spawn(new Vector2(0, 0));
     }
 
     public void Write(Writes writes)

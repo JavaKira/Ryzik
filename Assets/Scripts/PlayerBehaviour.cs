@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
+    public static PlayerBehaviour Instance;
+    
     [SerializeField] private float speed;
     
     private Vector3 _oldPosition;
@@ -12,6 +14,13 @@ public class PlayerBehaviour : MonoBehaviour
 
     public Vector2 Speed => _oldPosition - transform.position;
     public Mob Mob => _player;
+
+    private void Awake()
+    {
+        Instance = this;
+        var mainCamera = Camera.main;
+        mainCamera?.GetComponent<ObjectPurse>().SetPurseObject(gameObject);
+    }
 
     private void Start()
     {
