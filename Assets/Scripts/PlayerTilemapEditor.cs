@@ -1,4 +1,5 @@
-﻿using Content;
+﻿using System;
+using Content;
 using UI;
 using UnityEngine;
 
@@ -8,7 +9,16 @@ public class PlayerTilemapEditor : MonoBehaviour
     [SerializeField] private Hotbar hotbar;
 
     private float _mouseDragTime;
-    
+
+    private void Start()
+    {
+        if (tileMap == null)
+            tileMap = FindObjectOfType<TileMap>();
+        
+        if (hotbar == null)
+            hotbar = FindObjectOfType<Hotbar>();
+    }
+
     private void Update()
     {
         if (Game.Instance.IsPause() || Input.touchCount == 0) return;
