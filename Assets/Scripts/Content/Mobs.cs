@@ -50,7 +50,7 @@ namespace Content
         
         public List<Mob> GetByName(string name)
         {
-            return _mobs.Where(mob => mob.GetContentName().Equals(name)).ToList();
+            return _mobs.Where(mob => mob.name.Equals(name)).ToList();
         }
     }
 }

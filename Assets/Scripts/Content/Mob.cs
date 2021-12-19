@@ -38,12 +38,13 @@ namespace Content
 
         public string GetContentName()
         {
-            return "mob." + name.Replace("(Clone)", "");
+            return "mob." + name;
         }
 
         public Mob Spawn(Vector2 position)
         {
             var instance = Instantiate(this, Map.Instance.transform);
+            instance.name = name;
             instance.transform.position = new Vector3(position.x, position.y);
             Map.Instance.Mobs.Add(instance);
             return instance;
