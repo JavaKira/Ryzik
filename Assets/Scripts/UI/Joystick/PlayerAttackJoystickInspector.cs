@@ -19,5 +19,10 @@ namespace UI.Joystick
             if (_joystick.GetNormalized() != Vector2.zero)
                 player.Mob.Weapon.Attack();
         }
+        
+        public void SetPlayer(PlayerBehaviour newPlayer)
+        {
+            player = newPlayer;
+        }
     }
 }

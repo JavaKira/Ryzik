@@ -26,5 +26,10 @@ namespace UI.Joystick
         {
             player.Move(new Vector2(_joystick.GetNormalized().x, _joystick.GetNormalized().y));
         }
+
+        public void SetPlayer(PlayerBehaviour newPlayer)
+        {
+            player = newPlayer;
+        }
     }
 }

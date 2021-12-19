@@ -1,6 +1,7 @@
 using System;
 using Content;
 using UI;
+using UI.Joystick;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
@@ -20,6 +21,9 @@ public class PlayerBehaviour : MonoBehaviour
         Instance = this;
         var mainCamera = Camera.main;
         mainCamera?.GetComponent<ObjectPurse>().SetPurseObject(gameObject);
+
+        FindObjectOfType<PlayerJoystickInspector>().SetPlayer(this);
+        FindObjectOfType<PlayerAttackJoystickInspector>().SetPlayer(this);
     }
 
     private void Start()
