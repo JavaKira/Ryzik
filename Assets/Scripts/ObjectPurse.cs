@@ -4,6 +4,7 @@ public class ObjectPurse : MonoBehaviour
 {
     [SerializeField] private GameObject pursuedObject;
     [SerializeField] private float softness;
+    [SerializeField] private bool allowChangeObject = true;
     
     private void FixedUpdate()
     {
@@ -27,6 +28,7 @@ public class ObjectPurse : MonoBehaviour
 
     public void SetPurseObject(GameObject purse)
     {
-        pursuedObject = purse;
+        if (allowChangeObject)
+            pursuedObject = purse;
     }
 }
