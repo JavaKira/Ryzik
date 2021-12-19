@@ -14,6 +14,11 @@ namespace IO
 
         public static void Save(Map map)
         {
+            var directory = new DirectoryInfo(Application.persistentDataPath + "/" + PreservationsDirectory);
+
+            if (!directory.Exists)
+                directory.Create();
+
             MapIO.Save(map, PreservationsDirectory + DateTime.Now.ToString(CultureInfo.InvariantCulture)
                                 .Replace("/", "-").Replace(":", "-"));
         }
