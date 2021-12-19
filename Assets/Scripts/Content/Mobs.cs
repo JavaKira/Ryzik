@@ -37,7 +37,7 @@ namespace Content
 
         public void Write(Writes writes)
         {
-            writes.Int(_mobs.Count-1);
+            writes.Int(_mobs.Count);
 
             foreach (var mob in _mobs)
             {
