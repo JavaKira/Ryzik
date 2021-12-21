@@ -41,22 +41,22 @@ PrefabInstance:
     - target: {fileID: 5816591294718332511, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5816591294718332511, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5816591294718332511, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5816591294718332511, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5816591294718332511, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
         type: 3}
@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 7797460173426802281, guid: 71d9088ec56e5004e8d4084a9d14e8e2,
         type: 3}
       propertyPath: m_Name
-      value: SandboxItemSlot
+      value: SandboxItemSlot Variant
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8168042044119879875, guid: 71d9088ec56e5004e8d4084a9d14e8e2, type: 3}

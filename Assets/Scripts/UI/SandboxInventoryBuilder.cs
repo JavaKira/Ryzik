@@ -30,10 +30,22 @@ namespace UI
                 var slotTransform = (RectTransform) slot.transform;
                 var sizeDelta = slotTransform.sizeDelta;
 
-                slotTransform.localPosition += new Vector3(
+                var localPosition = slotTransform.localPosition;
+                localPosition += new Vector3(
                     column * sizeDelta.x + gap * column,
                     -line * sizeDelta.y - gap * line
                 );
+                
+                localPosition += new Vector3(
+                    sizeDelta.x / 2,
+                    0
+                );
+                
+                localPosition -= new Vector3(
+                    0,
+                    sizeDelta.y / 2
+                );
+                slotTransform.localPosition = localPosition;
 
                 column++;
                 if (column < slotsPerLine) continue;
