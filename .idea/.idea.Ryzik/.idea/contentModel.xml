@@ -48,6 +48,7 @@
           <e p="Tile.cs" t="Include" />
           <e p="TileBehaviour.cs" t="Include" />
           <e p="TileMap.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="CampaignButtonBehaviour.cs" t="Include" />
             <e p="CampaignPoint.cs" t="Include" />
