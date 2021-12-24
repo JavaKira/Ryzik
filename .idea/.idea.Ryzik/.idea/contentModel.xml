@@ -45,6 +45,7 @@
           <e p="PlayerBehaviour.cs" t="Include" />
           <e p="PlayerTilemapEditor.cs" t="Include" />
           <e p="PostProcess.cs" t="Include" />
+          <e p="SpriteVariants.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileBehaviour.cs" t="Include" />
           <e p="TileMap.cs" t="Include" />

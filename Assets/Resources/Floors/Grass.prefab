@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 935100496340001359}
   - component: {fileID: 251912188021824657}
   - component: {fileID: 7530870868911880109}
+  - component: {fileID: 7889820257032676256}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
@@ -44,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d793b7588a474e9e86cbffbc0f0039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 7870480730772048316, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  icon: {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
 --- !u!212 &7530870868911880109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_SortingLayerID: 864377841
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7870480730772048316, guid: ffe34ec91f5c905428b2183388a3bbef,
+  m_Sprite: {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,3 +98,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7889820257032676256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842545963340419515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d3c78aa4fd4fda9bd973ca1a30e0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variants:
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -9106852675655700425, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: 745968338076216934, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}
+  - {fileID: -8369517905372312421, guid: ffe34ec91f5c905428b2183388a3bbef, type: 3}

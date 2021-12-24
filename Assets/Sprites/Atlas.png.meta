@@ -58,7 +58,13 @@ TextureImporter:
     second: Atlas_18
   - first:
       213: -8369517905372312421
-    second: Atlas_19
+    second: grass1
+  - first:
+      213: -9106852675655700425
+    second: grass2
+  - first:
+      213: 745968338076216934
+    second: grass3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -499,7 +505,7 @@ TextureImporter:
       name: Atlas_16
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 64
         width: 32
         height: 64
@@ -520,7 +526,7 @@ TextureImporter:
       name: Atlas_17
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 32
         width: 32
         height: 32
@@ -559,10 +565,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_19
+      name: grass1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 128
         y: 96
         width: 32
         height: 32
@@ -575,6 +581,48 @@ TextureImporter:
       bones: []
       spriteID: b9c03050fcf79db80800000000000000
       internalID: -8369517905372312421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730f9bdddb5fd9180800000000000000
+      internalID: -9106852675655700425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ea8bc40463a5a00800000000000000
+      internalID: 745968338076216934
       vertices: []
       indices: 
       edges: []
