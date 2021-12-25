@@ -68,6 +68,7 @@
             <e p="MainMenuPanelBehaviour.cs" t="Include" />
             <e p="MapButton.cs" t="Include" />
             <e p="MapSelectBuilder.cs" t="Include" />
+            <e p="MissionStartPanel.cs" t="Include" />
             <e p="MobHealthBar.cs" t="Include" />
             <e p="Panel.cs" t="Include" />
             <e p="PausePanel.cs" t="Include" />

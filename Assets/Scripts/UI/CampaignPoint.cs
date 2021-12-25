@@ -20,13 +20,6 @@ namespace UI
             GetComponent<Image>().color = _completed ? 
                 new Color(completedColor.r, completedColor.g, completedColor.b) : 
                 new Color(noCompletedColor.r, noCompletedColor.g, noCompletedColor.b);
-            
-            GetComponent<Button>().onClick.AddListener(Open);
-        }
-
-        private void Open()
-        {
-            Game.Open(_title, true, "EatDefenseScene");
         }
     }
 }
