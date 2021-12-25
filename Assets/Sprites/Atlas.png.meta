@@ -4,67 +4,67 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4018074224661003100
-    second: Atlas_0
+    second: RyzikLeft
   - first:
       213: -4869357254534750094
-    second: Atlas_1
+    second: RyzikRight
   - first:
       213: -6721728136321296765
-    second: Atlas_2
+    second: StoneBlock
   - first:
       213: -7826287199498012479
-    second: Atlas_3
+    second: GrassBlock
   - first:
       213: 5327950094024008212
-    second: Atlas_4
+    second: WoodenPlankBlock
   - first:
       213: 6615319868462110837
-    second: Atlas_5
+    second: WoodenPlank
   - first:
       213: -1347233719151212251
-    second: Atlas_6
+    second: Stone
   - first:
       213: 7870480730772048316
-    second: Atlas_7
+    second: Ground
   - first:
       213: -407774699277236136
-    second: Atlas_8
+    second: SandBrickBlock
   - first:
       213: -5599750456436461424
-    second: Atlas_9
+    second: BrickBlock
   - first:
       213: -7450669156800766785
-    second: Atlas_10
+    second: SandBlock
   - first:
       213: -4272707242783423304
-    second: Atlas_11
+    second: Workbench
   - first:
       213: 1726203059708922746
-    second: Atlas_12
+    second: SandBrick
   - first:
       213: 3628468241054914511
-    second: Atlas_13
+    second: Brick
   - first:
       213: -3513202607186615407
-    second: Atlas_14
+    second: Sand
   - first:
       213: -9198928466637730507
-    second: Atlas_15
+    second: Furnace
   - first:
       213: -1291705123832498677
-    second: Atlas_17
+    second: Bush
   - first:
       213: 7182614658172301277
-    second: Atlas_18
+    second: Water
   - first:
       213: -8369517905372312421
     second: grass1
   - first:
       213: -9106852675655700425
-    second: grass2
+    second: Grass2
   - first:
       213: 745968338076216934
-    second: grass3
+    second: Grass3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,7 +166,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Atlas_0
+      name: RyzikLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -187,7 +187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_1
+      name: RyzikRight
       rect:
         serializedVersion: 2
         x: 32
@@ -208,7 +208,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_2
+      name: StoneBlock
       rect:
         serializedVersion: 2
         x: 64
@@ -229,7 +229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_3
+      name: GrassBlock
       rect:
         serializedVersion: 2
         x: 96
@@ -250,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_4
+      name: WoodenPlankBlock
       rect:
         serializedVersion: 2
         x: 0
@@ -271,7 +271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_5
+      name: WoodenPlank
       rect:
         serializedVersion: 2
         x: 32
@@ -292,7 +292,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_6
+      name: Stone
       rect:
         serializedVersion: 2
         x: 64
@@ -313,7 +313,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_7
+      name: Ground
       rect:
         serializedVersion: 2
         x: 96
@@ -334,7 +334,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_8
+      name: SandBrickBlock
       rect:
         serializedVersion: 2
         x: 0
@@ -355,7 +355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_9
+      name: BrickBlock
       rect:
         serializedVersion: 2
         x: 32
@@ -376,7 +376,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_10
+      name: SandBlock
       rect:
         serializedVersion: 2
         x: 64
@@ -397,7 +397,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_11
+      name: Workbench
       rect:
         serializedVersion: 2
         x: 96
@@ -418,7 +418,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_12
+      name: SandBrick
       rect:
         serializedVersion: 2
         x: 0
@@ -439,7 +439,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_13
+      name: Brick
       rect:
         serializedVersion: 2
         x: 32
@@ -460,7 +460,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_14
+      name: Sand
       rect:
         serializedVersion: 2
         x: 64
@@ -481,7 +481,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_15
+      name: Furnace
       rect:
         serializedVersion: 2
         x: 96
@@ -502,7 +502,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_16
+      name: Tree
       rect:
         serializedVersion: 2
         x: 160
@@ -523,7 +523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_17
+      name: Bush
       rect:
         serializedVersion: 2
         x: 160
@@ -544,7 +544,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_18
+      name: Water
       rect:
         serializedVersion: 2
         x: 128
@@ -586,7 +586,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass2
+      name: Grass2
       rect:
         serializedVersion: 2
         x: 128
@@ -594,7 +594,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -607,7 +607,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass3
+      name: Grass3
       rect:
         serializedVersion: 2
         x: 128
@@ -615,7 +615,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
