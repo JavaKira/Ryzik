@@ -12,6 +12,7 @@
           </e>
           <e p="Campaign.cs" t="Include" />
           <e p="CampaignCameraInput.cs" t="Include" />
+          <e p="ClearMission.cs" t="Include" />
           <e p="Content" t="Include">
             <e p="Block.cs" t="Include" />
             <e p="Content.cs" t="Include" />
@@ -68,6 +69,7 @@
             <e p="MainMenuPanelBehaviour.cs" t="Include" />
             <e p="MapButton.cs" t="Include" />
             <e p="MapSelectBuilder.cs" t="Include" />
+            <e p="MissionEndPanel.cs" t="Include" />
             <e p="MissionStartPanel.cs" t="Include" />
             <e p="MobHealthBar.cs" t="Include" />
             <e p="Panel.cs" t="Include" />
