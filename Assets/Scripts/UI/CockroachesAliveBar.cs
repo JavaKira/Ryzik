@@ -10,26 +10,32 @@ namespace UI
     {
         private Image _progressBar;
         private TMP_Text _count;
+        private UnityAction _listener;
 
-        private void Start()
+        private void Start() 
         {
+            UnityEngine.Debug.Log("bar");
             _progressBar = GetComponentInChildren<Image>();
             _count = GetComponentInChildren<TMP_Text>();
-
-            var cockroachesTotal = Map.Instance.Mobs.GetByName("mob.Cockroach").Count;
-
-            var listener = new UnityAction(() =>
+            
+            _listener = new UnityAction(() =>
             {
-                var cockroaches = Map.Instance.Mobs.GetByName("mob.Cockroach");
+                var cockroachesTotal = Map.Instance.MobsAtLoaded.GetByName("Cockroach").Count;
+                var cockroaches = Map.Instance.Mobs.GetByName("Cockroach");
 
                 _count.text = FormatCount(cockroaches.Count, cockroachesTotal);
                 _progressBar.fillAmount = cockroaches.Count / (float) cockroachesTotal;
             });
             
             //init
-            listener.Invoke();
+            _listener.Invoke();
             
-            Map.Instance.Mobs.Changed.AddListener(listener);
+            Map.Instance.Mobs.Changed.AddListener(_listener);
+        }
+
+        private void FixedUpdate()
+        {
+            _listener.Invoke(); //shit
         }
 
         private static string FormatCount(int alive, int total)
