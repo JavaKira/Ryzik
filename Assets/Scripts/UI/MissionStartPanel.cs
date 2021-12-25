@@ -15,7 +15,7 @@ namespace UI
 
         public void StartGame()
         {
-            Game.Open(_currentPoint.name, true, "EatDefenseScene");
+            Game.Open(_currentPoint.name, true, _currentPoint.MissionType + "Scene");
         }
     }
 }

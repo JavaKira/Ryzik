@@ -206,6 +206,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343538940}
     m_Modifications:
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: missionType
+      value: MissionClear
+      objectReference: {fileID: 0}
     - target: {fileID: 2152678191334930308, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_text
@@ -1310,6 +1315,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343538940}
     m_Modifications:
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: missionType
+      value: MissionClear
+      objectReference: {fileID: 0}
     - target: {fileID: 4210795029900186545, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1522,6 +1532,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343538940}
     m_Modifications:
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: missionType
+      value: MissionClear
+      objectReference: {fileID: 0}
+    - target: {fileID: 2152678191334930308, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: m_text
+      value: Surrounded
+      objectReference: {fileID: 0}
     - target: {fileID: 4210795029900186545, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1630,7 +1650,7 @@ PrefabInstance:
     - target: {fileID: 8064412244852231981, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_Name
-      value: Point (1)
+      value: Surrounded
       objectReference: {fileID: 0}
     - target: {fileID: 8958509739017916009, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}

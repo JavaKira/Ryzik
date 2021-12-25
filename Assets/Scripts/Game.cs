@@ -12,7 +12,7 @@ public class Game : MonoBehaviour
     private static string _preservationFileName;
     private bool _pause;
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
         Content.Content.Init();

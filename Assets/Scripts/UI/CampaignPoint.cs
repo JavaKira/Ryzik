@@ -7,8 +7,11 @@ namespace UI
 {
     public class CampaignPoint : MonoBehaviour
     {
+        [SerializeField] private string missionType;
         [SerializeField] private Color noCompletedColor;
         [SerializeField] private Color completedColor;
+
+        public string MissionType => missionType;
 
         private bool _completed = default;
         private string _title;
