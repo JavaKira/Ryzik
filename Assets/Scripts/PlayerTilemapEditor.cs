@@ -39,10 +39,15 @@ public class PlayerTilemapEditor : MonoBehaviour
                 (int) ((mousePosition.x + 4) / 8),
                 (int) ((mousePosition.y + 4) / 8)
             );
-            
+
             if (tile.Block.name != "Air")
+            {
                 tile.Block = Block.GetAir();
-            else if (tile.Floor.name != "Air")
+                _mouseDragTime = 0;
+                return;
+            }
+            
+            if (tile.Floor.name != "Air")
                 tile.Floor = Floor.GetAir();
             
             return;
