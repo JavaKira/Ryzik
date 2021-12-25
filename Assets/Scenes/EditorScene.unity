@@ -3380,6 +3380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc8f210322304d9cbb8ca38ee679d0a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultMapSize: {x: 25, y: 25}
   mapNameField: {fileID: 167654725}
   map: {fileID: 136095670}
 --- !u!114 &2111872522
