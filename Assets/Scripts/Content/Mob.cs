@@ -18,9 +18,15 @@ namespace Content
 
         private void Start()
         {
-            Weapon = GetComponentInChildren<WeaponSlot>().Build(defaultWeapon);
-            
             Heal(maxHealth);
+            
+            healthChanged.AddListener(() =>
+            {
+                if (Health < 0)
+                    Dead();
+            });
+
+            Weapon = GetComponentInChildren<WeaponSlot>().Build(defaultWeapon);
         }
         
         private void OnCollisionEnter2D(Collision2D other)
@@ -61,6 +67,12 @@ namespace Content
             Health += amount;
             Health = Mathf.Min(Health, maxHealth);
             healthChanged.Invoke();
+        }
+
+        private void Dead()
+        {
+            Map.Instance.Mobs.Remove(this);
+            Destroy(gameObject);
         }
 
         public static Mob GetByName(string name)
