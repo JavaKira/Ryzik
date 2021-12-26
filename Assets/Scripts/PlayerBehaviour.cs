@@ -33,6 +33,11 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
+        if (direction.x > 0)
+            _player.transform.localScale = new Vector3(1, 1, 1);
+        else if (direction.x < 0)
+            _player.transform.localScale = new Vector3(-1, 1, 1);
+
         _oldPosition = transform.position;
         
         var moveDirectionForce = new Vector3(direction.x, direction.y , 0.0f);

@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   enemyCollisionDamage: 10
+  defaultWeapon: {fileID: 0}
   healthChanged:
     m_PersistentCalls:
       m_Calls: []
