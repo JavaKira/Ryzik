@@ -14,7 +14,6 @@ namespace UI
 
         private void Start() 
         {
-            UnityEngine.Debug.Log("bar");
             _progressBar = GetComponentInChildren<Image>();
             _count = GetComponentInChildren<TMP_Text>();
             

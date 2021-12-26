@@ -46,7 +46,6 @@ public class Map : MonoBehaviour
         
         _mobs.Read(reads);
         MobsAtLoaded = _mobs.Copy();
-        UnityEngine.Debug.Log("loaded");
 
         if (_mobs.GetByName("Ryzik").Count == 0)
             Mob.GetByName("Ryzik").Spawn(new Vector2(0, 0));
