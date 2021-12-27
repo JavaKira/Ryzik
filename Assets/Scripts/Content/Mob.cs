@@ -6,6 +6,8 @@ namespace Content
 {
     public class Mob : MonoBehaviour, IContent
     {
+        public static UnityEvent<Mob> MobDead = new UnityEvent<Mob>();
+        
         [SerializeField] private int maxHealth;
         [SerializeField] private int enemyCollisionDamage;
         [SerializeField] private Weapon defaultWeapon;
@@ -71,6 +73,7 @@ namespace Content
 
         private void Dead()
         {
+            MobDead.Invoke(this);
             Map.Instance.Mobs.Remove(this);
             Destroy(gameObject);
         }
