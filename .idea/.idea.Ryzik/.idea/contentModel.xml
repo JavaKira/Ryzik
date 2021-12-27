@@ -79,6 +79,7 @@
             <e p="PreservationListBuilder.cs" t="Include" />
             <e p="SandboxInventoryBuilder.cs" t="Include" />
             <e p="SandboxItemSlot.cs" t="Include" />
+            <e p="SceneOpenButton.cs" t="Include" />
             <e p="UIInput.cs" t="Include" />
           </e>
           <e p="Weapon.cs" t="Include" />
