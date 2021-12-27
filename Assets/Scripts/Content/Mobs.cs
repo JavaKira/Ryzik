@@ -52,15 +52,5 @@ namespace Content
         {
             return _mobs.Where(mob => mob.name.Equals(name)).ToList();
         }
-
-        public Mobs Copy()
-        {
-            var mobs = new Mobs();
-            foreach (var t in _mobs)
-            {
-                mobs.Add(t);
-            }
-            return mobs;
-        }
     }
 }

@@ -2,6 +2,7 @@
 using Content;
 using IO;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Map : MonoBehaviour
 {
@@ -11,17 +12,16 @@ public class Map : MonoBehaviour
     private Mobs _mobs;
 
     public string Name { get; set; }
-
     public TileMap Tilemap => _tilemap;
     public Mobs Mobs => _mobs;
-
-    public Mobs MobsAtLoaded;
+    public UnityEvent Loaded { get; private set; }
 
     private void Awake()
     {
         Instance = this;
         _tilemap = GetComponentInChildren<TileMap>();
         _mobs = new Mobs();
+        Loaded = new UnityEvent();
     }
 
     public void Read(Reads reads)
@@ -45,10 +45,11 @@ public class Map : MonoBehaviour
         _tilemap.Build();
         
         _mobs.Read(reads);
-        MobsAtLoaded = _mobs.Copy();
 
         if (_mobs.GetByName("Ryzik").Count == 0)
             Mob.GetByName("Ryzik").Spawn(new Vector2(0, 0));
+        
+        Loaded.Invoke();
     }
 
     public void Write(Writes writes)
