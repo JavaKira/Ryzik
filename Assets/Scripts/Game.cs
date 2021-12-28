@@ -31,6 +31,8 @@ public class Game : MonoBehaviour
         
         if (_preservationFileName != null)
             Load();
+        
+        Resume();
     }
 
     private static void Load()
