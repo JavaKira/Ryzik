@@ -27,7 +27,13 @@ public class PlayerTilemapEditor : MonoBehaviour
         if (EditorInput.IsMouseOverUI(touch.fingerId)) return;
         
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(touch.position);
-
+        
+        if (!tileMap.InBounds(
+            (int) ((mousePosition.x + 4) / 8), 
+            (int) ((mousePosition.y + 4) / 8))
+        )
+            return;
+            
         if (touch.phase == TouchPhase.Stationary)
             _mouseDragTime += Time.deltaTime;
         else

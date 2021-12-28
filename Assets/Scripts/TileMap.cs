@@ -62,6 +62,12 @@ public class TileMap : MonoBehaviour
         _tiles[x][y] = tile;
     }
 
+    public bool InBounds(int x, int y)
+    {
+        if (x < 0 || y < 0) return false;
+        return !(x > Size.x - 1) && !(y > Size.y - 1);
+    }
+
     public Tile GetTileByWorldPosition(int worldX, int worldY)
     {
         return GetTile((int) (worldX / tilesGap), (int) (worldY / tilesGap));
