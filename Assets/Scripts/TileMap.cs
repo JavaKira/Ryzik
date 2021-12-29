@@ -2,6 +2,7 @@
 using System.Drawing;
 using IO;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TileMap : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class TileMap : MonoBehaviour
 
     private Tile[][] _tiles;
     private int _width, _height;
+
+    public UnityEvent Changed { get; private set; }
+
+    private void Awake()
+    {
+        Changed = new UnityEvent();
+    }
 
     public Vector2Int Size
     {
@@ -86,6 +94,7 @@ public class TileMap : MonoBehaviour
         
         createdTile.Tile = tile;
         createdTile.Tile.Block = tile.Block;
+        tile.Changed.AddListener(Changed.Invoke);
     }
     
     public void Write(Writes writes)

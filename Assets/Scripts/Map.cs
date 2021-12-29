@@ -15,6 +15,7 @@ public class Map : MonoBehaviour
     public TileMap Tilemap => _tilemap;
     public Mobs Mobs => _mobs;
     public UnityEvent Loaded { get; private set; }
+    public UnityEvent Changed { get; private set; }
 
     private void Awake()
     {
@@ -22,6 +23,11 @@ public class Map : MonoBehaviour
         _tilemap = GetComponentInChildren<TileMap>();
         _mobs = new Mobs();
         Loaded = new UnityEvent();
+        Changed = new UnityEvent();
+        
+        Loaded.AddListener(Changed.Invoke);
+        Mobs.Changed.AddListener(Changed.Invoke);
+        Tilemap.Changed.AddListener(Changed.Invoke);
     }
 
     public void Read(Reads reads)
