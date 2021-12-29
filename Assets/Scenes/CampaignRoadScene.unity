@@ -216,6 +216,11 @@ PrefabInstance:
       propertyPath: missionType
       value: MissionClear
       objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: availableColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2152678191334930308, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_text
@@ -997,6 +1002,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1506909309}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &863125133 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 110792233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59c1f337e494161944a6f44432f70b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1118423363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,6 +1508,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
+      propertyPath: comp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1674025891}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
       propertyPath: title
       value: FirstLevel
       objectReference: {fileID: 0}
@@ -1498,6 +1525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: missionType
       value: MissionClear
+      objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: availableColor.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4210795029900186545, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
@@ -1704,6 +1736,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1674025891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2152678190832714152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59c1f337e494161944a6f44432f70b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1962931778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2070,6 +2114,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
+      propertyPath: comp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 863125133}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
       propertyPath: title
       value: Surrounded
       objectReference: {fileID: 0}
@@ -2077,6 +2131,21 @@ PrefabInstance:
         type: 3}
       propertyPath: missionType
       value: MissionClear
+      objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: availableColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: completedColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+        type: 3}
+      propertyPath: noCompletedColor.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2152678191334930308, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}

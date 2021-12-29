@@ -89,9 +89,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59c1f337e494161944a6f44432f70b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: 
   missionType: 
-  noCompletedColor: {r: 0.67058825, g: 0.15294118, b: 0.20392159, a: 0}
-  completedColor: {r: 0.49411768, g: 0.85098046, b: 0.4666667, a: 0}
+  next: {fileID: 0}
+  noCompletedColor: {r: 0.67058825, g: 0.15294118, b: 0.20392159, a: 1}
+  availableColor: {r: 0.99850786, g: 1, b: 0, a: 0}
+  completedColor: {r: 0.49411768, g: 0.85098046, b: 0.4666667, a: 1}
 --- !u!114 &8958509739017916009
 MonoBehaviour:
   m_ObjectHideFlags: 0
