@@ -12,6 +12,7 @@
           </e>
           <e p="Campaign.cs" t="Include" />
           <e p="CampaignCameraInput.cs" t="Include" />
+          <e p="CampaignPoints.cs" t="Include" />
           <e p="ClearMission.cs" t="Include" />
           <e p="Content" t="Include">
             <e p="Block.cs" t="Include" />
@@ -34,6 +35,7 @@
           <e p="Game.cs" t="Include" />
           <e p="HotbarPlayerInspector.cs" t="Include" />
           <e p="IO" t="Include">
+            <e p="CampaignIO.cs" t="Include" />
             <e p="MapIO.cs" t="Include" />
             <e p="PreservationsIO.cs" t="Include" />
             <e p="Reads.cs" t="Include" />

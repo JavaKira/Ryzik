@@ -1,4 +1,5 @@
 ﻿using System;
+using IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -53,6 +54,16 @@ namespace UI
             GetComponent<Image>().color = _completed ? 
                 new Color(completedColor.r, completedColor.g, completedColor.b) : 
                 new Color(noCompletedColor.r, noCompletedColor.g, noCompletedColor.b);
+        }
+
+        public void Read(Reads reads)
+        {
+            _completed = reads.Boolean();
+        }
+
+        public void Write(Writes writes)
+        {
+            writes.Boolean(_completed);
         }
     }
 }

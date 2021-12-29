@@ -25,5 +25,10 @@ namespace IO
         {
             return _input.ReadString();
         }
+
+        public bool Boolean()
+        {
+            return _input.ReadBoolean();
+        }
     }
 }

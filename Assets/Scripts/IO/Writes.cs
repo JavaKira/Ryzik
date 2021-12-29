@@ -25,5 +25,10 @@ namespace IO
         {
             _output.Write(s);
         }
+
+        public void Boolean(bool boolean)
+        {
+            _output.Write(boolean);
+        }
     }
 }
