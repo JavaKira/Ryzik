@@ -6,6 +6,8 @@ public class MissionType
     private readonly List<MissionRequirement> _missionEndRequirements;
     private readonly List<MissionRequirement> _missionFailRequirements;
 
+    public Mission LastMission { get; private set; }
+
     public MissionType(string mapName, List<MissionRequirement> missionEndRequirements, List<MissionRequirement> missionFailRequirements)
     {
         _mapName = mapName;
@@ -21,6 +23,7 @@ public class MissionType
 
     public void BuildMission(Mission mission)
     {
+        LastMission = mission;
         mission.MissionEndRequirements = new List<MissionRequirement>(_missionEndRequirements);
         mission.MissionFailRequirements = new List<MissionRequirement>(_missionFailRequirements);
     }

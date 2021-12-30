@@ -21,6 +21,11 @@ namespace UI
 
         private bool _completed = default;
 
+        private void Awake()
+        {
+            _completed = Campaign.Completed(title);
+        }
+
         private void Start()
         {
             SetColor();
@@ -54,6 +59,11 @@ namespace UI
             GetComponent<Image>().color = _completed ? 
                 new Color(completedColor.r, completedColor.g, completedColor.b) : 
                 new Color(noCompletedColor.r, noCompletedColor.g, noCompletedColor.b);
+        }
+
+        public void Complete()
+        {
+            _completed = true;
         }
 
         public void Read(Reads reads)

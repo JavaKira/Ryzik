@@ -7,10 +7,13 @@ namespace UI
 {
     public class MissionStartPanel : MonoBehaviour
     {
+        public static CampaignPoint LastPoint;
+        
         private CampaignPoint _currentPoint;
 
         public void Open(CampaignPoint campaignPoint)
         {
+            LastPoint = campaignPoint;
             _currentPoint = campaignPoint;
             GetComponentInChildren<TMP_Text>().text = campaignPoint.Title;
             gameObject.SetActive(true);
@@ -18,7 +21,8 @@ namespace UI
 
         public void StartGame()
         {
-            _currentPoint.MissionType.Build().StartMission();
+            var missionType = _currentPoint.MissionType.Build();
+            missionType.StartMission();
         }
     }
 }

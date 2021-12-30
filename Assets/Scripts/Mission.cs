@@ -39,5 +39,6 @@ public class Mission : MonoBehaviour
     private void End()
     {
         FindObjectOfType<MissionEndPanel>(true).gameObject.SetActive(true);
+        Campaign.Complete(MissionStartPanel.LastPoint.Title);
     }
 }

@@ -23,6 +23,13 @@ namespace IO
                 writes.String(campaignPoint.Title);
                 campaignPoint.Write(writes);
             }
+
+            writes.Int(Campaign.CompletedPoints.Count);
+            
+            foreach (var completedPoint in Campaign.CompletedPoints)
+            {
+                writes.String(completedPoint);
+            }
         }
 
         public static void Load()
@@ -40,6 +47,15 @@ namespace IO
                 var pointTitle = reads.String();
                 var point = CampaignPoints.Instance.GetByTitle(pointTitle);
                 point.Read(reads);
+            }
+
+            var completedPointsCount = reads.Int();
+
+            Campaign.CompletedPoints.Clear();
+            
+            for (var i = 0; i < completedPointsCount; i++)
+            {
+                Campaign.CompletedPoints.Add(reads.String());
             }
         }
     }
