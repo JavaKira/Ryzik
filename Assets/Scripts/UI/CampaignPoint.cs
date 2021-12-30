@@ -18,6 +18,7 @@ namespace UI
         private CampaignPoint Previous { get; set; }
         public MissionTypeBuilder MissionType => missionType;
         public string Title => title;
+        public bool Available { get; private set; }
 
         private bool _completed = default;
 
@@ -45,12 +46,13 @@ namespace UI
         {
             if (Previous != null && Previous._completed && !_completed)
             {
-                GetComponent<Image>().color = availableColor;
-                UnityEngine.Debug.Log(title);
-                return;
-            } 
-            
-            if (Previous == null && !_completed)
+                Available = true;
+            } else if (Previous == null && !_completed)
+            {
+                Available = true;
+            }
+
+            if (Available)
             {
                 GetComponent<Image>().color = availableColor;
                 return;

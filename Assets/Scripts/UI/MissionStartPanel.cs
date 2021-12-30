@@ -13,6 +13,9 @@ namespace UI
 
         public void Open(CampaignPoint campaignPoint)
         {
+            if (!campaignPoint.Available)
+                return;
+            
             LastPoint = campaignPoint;
             _currentPoint = campaignPoint;
             GetComponentInChildren<TMP_Text>().text = campaignPoint.Title;
