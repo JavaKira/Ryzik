@@ -9,14 +9,14 @@ namespace UI
     public class CampaignPoint : MonoBehaviour
     {
         [SerializeField] private string title;
-        [SerializeField] private string missionType;
+        [SerializeField] private MissionTypeBuilder missionType;
         [SerializeField] private CampaignPoint next;
         [SerializeField] private Color noCompletedColor;
         [SerializeField] private Color availableColor;
         [SerializeField] private Color completedColor;
 
         private CampaignPoint Previous { get; set; }
-        public string MissionType => missionType;
+        public MissionTypeBuilder MissionType => missionType;
         public string Title => title;
 
         private bool _completed = default;
