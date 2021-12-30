@@ -10,6 +10,11 @@ namespace IO
 
         public static void Save()
         {
+            var directory = new DirectoryInfo(Application.persistentDataPath + "/" + Directory);
+
+            if (!directory.Exists)
+                directory.Create();
+            
             var name = "campaignSave";
             name += Extension;
             var fileStream = new FileStream(Application.persistentDataPath + "/" + Directory + name, FileMode.Create);
