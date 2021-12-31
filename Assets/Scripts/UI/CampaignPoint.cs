@@ -67,15 +67,5 @@ namespace UI
         {
             _completed = true;
         }
-
-        public void Read(Reads reads)
-        {
-            _completed = reads.Boolean();
-        }
-
-        public void Write(Writes writes)
-        {
-            writes.Boolean(_completed);
-        }
     }
 }
