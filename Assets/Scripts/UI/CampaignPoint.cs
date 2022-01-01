@@ -21,19 +21,22 @@ namespace UI
         public bool Available { get; private set; }
 
         private bool _completed = default;
+        private Star[] _stars;
 
         private void Awake()
         {
             _completed = Campaign.Completed(title);
+            _stars = GetComponentsInChildren<Star>();
         }
 
         private void Start()
         {
-            SetColor();
+            UpdateStars();
+            UpdateColor();
             
             BuildGraph();
             next.BuildGraph();
-            next.SetColor();
+            next.UpdateColor();
         }
 
         private void BuildGraph()
@@ -42,7 +45,7 @@ namespace UI
                 next.Previous = this;    
         }
 
-        private void SetColor()
+        private void UpdateColor()
         {
             if (Previous != null && Previous._completed && !_completed)
             {
@@ -61,6 +64,11 @@ namespace UI
             GetComponent<Image>().color = _completed ? 
                 new Color(completedColor.r, completedColor.g, completedColor.b) : 
                 new Color(noCompletedColor.r, noCompletedColor.g, noCompletedColor.b);
+        }
+
+        private void UpdateStars()
+        {
+            _stars[0].Active = true;
         }
 
         public void Complete()
