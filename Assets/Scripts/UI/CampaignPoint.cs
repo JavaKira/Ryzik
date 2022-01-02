@@ -36,6 +36,7 @@ namespace UI
             UpdateStars();
             UpdateColor();
             
+            if (next == null) return;
             BuildGraph();
             next.BuildGraph();
             next.UpdateColor();
