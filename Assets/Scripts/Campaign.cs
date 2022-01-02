@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using IO;
 using UI;
@@ -22,10 +23,17 @@ public static class Campaign
 
     public static CampaignPoint.CampaignPointData GetData(string title)
     {
-        if (!Loaded) 
+        if (Loaded) return PointData.Find(data => data.CampaignPointTitle.Equals(title));
+        try
+        {
             CampaignIO.Load();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
         
-        return PointData.Find((data => data.CampaignPointTitle.Equals(title)));
+        return PointData.Find(data => data.CampaignPointTitle.Equals(title));
     }
 
     public static void OpenCampaignRoad()
