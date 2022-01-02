@@ -1031,6 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapName: Surrounded
+  missionEndMainRequirement: {fileID: 1021470251}
   missionEndRequirements:
   - {fileID: 1021470251}
   missionFailRequirements: []
@@ -1813,6 +1814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapName: Surrounded
+  missionEndMainRequirement: {fileID: 1674025892}
   missionEndRequirements:
   - {fileID: 1674025892}
   missionFailRequirements: []
@@ -2205,6 +2207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapName: Surrounded
+  missionEndMainRequirement: {fileID: 2116914044}
   missionEndRequirements:
   - {fileID: 2116914044}
   missionFailRequirements: []

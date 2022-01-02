@@ -5,6 +5,7 @@ using UnityEngine;
 public class MissionTypeBuilder : MonoBehaviour
 {
     [SerializeField] private string mapName;
+    [SerializeField] private MissionRequirementBuilder missionEndMainRequirement;
     [SerializeField] private List<MissionRequirementBuilder> missionEndRequirements;
     [SerializeField] private List<MissionRequirementBuilder> missionFailRequirements;
 
@@ -12,6 +13,7 @@ public class MissionTypeBuilder : MonoBehaviour
     {
         return new MissionType(
             mapName,
+            missionEndMainRequirement.Build(),
             missionEndRequirements.ConvertAll(input => input.Build()),
             missionFailRequirements.ConvertAll(input => input.Build())
         );
