@@ -215,7 +215,7 @@ PrefabInstance:
         type: 3}
       propertyPath: missionType
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1021470250}
     - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: availableColor.a
@@ -1006,12 +1006,47 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 110792233}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1021470249}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a59c1f337e494161944a6f44432f70b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1021470249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8064412244852231981, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 110792233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1021470250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021470249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6212ccc72cdc41caa5a1bb0ecde451ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapName: Surrounded
+  missionEndRequirements:
+  - {fileID: 1021470251}
+  missionFailRequirements: []
+--- !u!114 &1021470251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021470249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c184e733addc4da5903ef5b1797cab46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobType: {fileID: 639846518012087839, guid: 381d4eae447f472418bdfa54515585e6, type: 3}
 --- !u!1 &1118423363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,7 +1558,7 @@ PrefabInstance:
         type: 3}
       propertyPath: missionType
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2116914045}
     - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: availableColor.a
@@ -1637,7 +1672,7 @@ PrefabInstance:
     - target: {fileID: 8064412244852231981, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_Name
-      value: Point (2)
+      value: FirstLevel
       objectReference: {fileID: 0}
     - target: {fileID: 8958509739017916009, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
@@ -1778,9 +1813,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapName: Surrounded
-  missionEndRequirements: []
-  missionFailRequirements:
+  missionEndRequirements:
   - {fileID: 1674025892}
+  missionFailRequirements: []
 --- !u!1001 &1962931778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2138,6 +2173,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xBounds: {x: -9.3, y: 614}
   speedMultiplier: 4
+--- !u!1 &2116914043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8064412244852231981, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1506909309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2116914044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116914043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c184e733addc4da5903ef5b1797cab46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobType: {fileID: 639846518012087839, guid: 381d4eae447f472418bdfa54515585e6, type: 3}
+--- !u!114 &2116914045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116914043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6212ccc72cdc41caa5a1bb0ecde451ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapName: Surrounded
+  missionEndRequirements:
+  - {fileID: 2116914044}
+  missionFailRequirements: []
 --- !u!1 &2142367203
 GameObject:
   m_ObjectHideFlags: 0
