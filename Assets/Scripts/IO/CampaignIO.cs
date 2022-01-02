@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using UI;
 using UnityEngine;
 
 namespace IO
@@ -21,11 +22,12 @@ namespace IO
             var writer = new BinaryWriter(fileStream);
             var writes = new Writes(writer);
       
-            writes.Int(Campaign.CompletedPoints.Count);
-            
-            foreach (var completedPoint in Campaign.CompletedPoints)
+            writes.Int(Campaign.PointData.Count);
+
+            foreach (var data in Campaign.PointData)
             {
-                writes.String(completedPoint);
+                writes.String(data.CampaignPointTitle);
+                data.Write(writes);
             }
         }
 
@@ -39,11 +41,13 @@ namespace IO
 
             var completedPointsCount = reads.Int();
 
-            Campaign.CompletedPoints.Clear();
+            Campaign.PointData.Clear();
             
             for (var i = 0; i < completedPointsCount; i++)
             {
-                Campaign.CompletedPoints.Add(reads.String());
+                var data = new CampaignPoint.CampaignPointData(reads.String());
+                data.Read(reads);
+                Campaign.PointData.Add(data);
             }
         }
     }

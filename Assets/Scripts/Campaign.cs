@@ -1,20 +1,26 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using IO;
+using UI;
 using UnityEngine.SceneManagement;
 
 public static class Campaign
 {
-    public static readonly List<string> CompletedPoints = new List<string>();
+    public static readonly List<CampaignPoint.CampaignPointData>
+        PointData = new List<CampaignPoint.CampaignPointData>();
 
-    public static void Complete(string name)
+    public static void Complete(CampaignPoint campaignPoint)
     {
-        CompletedPoints.Add(name);
+        if (!PointData.Contains(campaignPoint.Data))
+            PointData.Add(campaignPoint.Data);
+        
+        campaignPoint.Data.Completed = true;
         CampaignIO.Save();
     }
 
-    public static bool Completed(string name)
+    public static CampaignPoint.CampaignPointData GetData(string title)
     {
-        return CompletedPoints.Contains(name);
+        return PointData.Find((data => data.CampaignPointTitle.Equals(title)));
     }
 
     public static void OpenCampaignRoad()

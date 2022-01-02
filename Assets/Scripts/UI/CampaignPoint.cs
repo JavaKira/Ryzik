@@ -19,13 +19,15 @@ namespace UI
         public MissionTypeBuilder MissionType => missionType;
         public string Title => title;
         public bool Available { get; private set; }
-
-        private bool _completed = default;
+        
         private Star[] _stars;
+
+        public CampaignPointData Data;
 
         private void Awake()
         {
-            _completed = Campaign.Completed(title);
+            var data = Campaign.GetData(title);
+            Data = data ?? new CampaignPointData(title);
             _stars = GetComponentsInChildren<Star>();
         }
 
@@ -47,10 +49,10 @@ namespace UI
 
         private void UpdateColor()
         {
-            if (Previous != null && Previous._completed && !_completed)
+            if (Previous != null && Previous.Data.Completed && !Data.Completed)
             {
                 Available = true;
-            } else if (Previous == null && !_completed)
+            } else if (Previous == null && !Data.Completed)
             {
                 Available = true;
             }
@@ -61,19 +63,49 @@ namespace UI
                 return;
             }
 
-            GetComponent<Image>().color = _completed ? 
+            GetComponent<Image>().color = Data.Completed ? 
                 new Color(completedColor.r, completedColor.g, completedColor.b) : 
                 new Color(noCompletedColor.r, noCompletedColor.g, noCompletedColor.b);
         }
 
         private void UpdateStars()
         {
-            _stars[0].Active = true;
+            for (var i = 0; i < Data.Stars; i++)
+            {
+                if (i > _stars.Length)
+                    break;
+                
+                _stars[i].Active = true;
+            }
         }
 
         public void Complete()
         {
-            _completed = true;
+            Data.Completed = true;
+        }
+        
+        public class CampaignPointData
+        {
+            public readonly string CampaignPointTitle;
+            public bool Completed;
+            public int Stars;
+
+            public CampaignPointData(string campaignPointTitle)
+            {
+                CampaignPointTitle = campaignPointTitle;
+            }
+
+            public void Read(Reads reads)
+            {
+                Completed = reads.Boolean();
+                Stars = reads.Int();
+            }
+
+            public void Write(Writes writes)
+            {
+                writes.Boolean(Completed);
+                writes.Int(Stars);
+            }
         }
     }
 }
