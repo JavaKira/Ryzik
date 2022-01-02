@@ -49,6 +49,8 @@ namespace IO
                 data.Read(reads);
                 Campaign.PointData.Add(data);
             }
+
+            Campaign.Loaded = true;
         }
     }
 }

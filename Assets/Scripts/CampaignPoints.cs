@@ -15,7 +15,6 @@ public class CampaignPoints : MonoBehaviour
     {
         Instance = this;
         _points = GetComponentsInChildren<CampaignPoint>().ToList();
-        CampaignIO.Load();
     }
 
     public CampaignPoint GetByTitle(string title)

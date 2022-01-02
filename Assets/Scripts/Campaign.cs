@@ -9,6 +9,8 @@ public static class Campaign
     public static readonly List<CampaignPoint.CampaignPointData>
         PointData = new List<CampaignPoint.CampaignPointData>();
 
+    public static bool Loaded;
+
     public static void Complete(CampaignPoint campaignPoint)
     {
         if (!PointData.Contains(campaignPoint.Data))
@@ -20,6 +22,9 @@ public static class Campaign
 
     public static CampaignPoint.CampaignPointData GetData(string title)
     {
+        if (!Loaded) 
+            CampaignIO.Load();
+        
         return PointData.Find((data => data.CampaignPointTitle.Equals(title)));
     }
 
