@@ -73,7 +73,7 @@ namespace UI
         {
             for (var i = 0; i < Data.Stars; i++)
             {
-                if (i > _stars.Length)
+                if (i >= _stars.Length)
                     break;
                 
                 _stars[i].Active = true;
