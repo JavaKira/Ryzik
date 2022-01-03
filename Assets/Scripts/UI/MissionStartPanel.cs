@@ -13,7 +13,7 @@ namespace UI
 
         public void Open(CampaignPoint campaignPoint)
         {
-            if (!campaignPoint.Available)
+            if (!campaignPoint.Available && !campaignPoint.Data.Completed)
                 return;
             
             LastPoint = campaignPoint;
