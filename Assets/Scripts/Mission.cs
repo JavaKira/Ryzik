@@ -18,23 +18,18 @@ public class Mission : MonoBehaviour
     public void Start()
     {
         PresetType?.BuildMission(this);
-
+        
         MissionEndMainRequirement.DoneEvent.AddListener(AddStar);
         MissionEndMainRequirement.DoneEvent.AddListener(End);
-        MissionEndMainRequirement.Update();
-        
+
         foreach (var missionEndRequirement in MissionEndRequirements)
         {
-            Map.Instance.Changed.AddListener(missionEndRequirement.Update);
             missionEndRequirement.DoneEvent.AddListener(AddStar);
-            missionEndRequirement.Update();
         }
         
         foreach (var missionFailRequirement in MissionFailRequirements)
         {
-            Map.Instance.Changed.AddListener(missionFailRequirement.Update);
             missionFailRequirement.DoneEvent.AddListener(Failed);
-            missionFailRequirement.Update();
         }
     }
 

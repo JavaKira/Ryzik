@@ -5,18 +5,9 @@ using UnityEngine;
 public class MobDeadMissionRequirementBuilder : MissionRequirementBuilder
 {
     [SerializeField] private Mob mobType;
-
-    /*private void Start()
+    
+    public override MissionRequirement Build()
     {
-        _requirements.AddListener(Mob.MobDead.AddListener((deadMob) =>
-        {
-            if (deadMob.name.Equals(mobType.name))
-                
-        }));
-    }*/
-
-    protected override bool Requirements()
-    {
-        return true;
+        return new MobDeadMissionRequirement(mobType);
     }
 }
