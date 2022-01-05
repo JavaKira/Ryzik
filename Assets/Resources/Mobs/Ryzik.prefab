@@ -408,7 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   enemyCollisionDamage: 0
-  defaultWeapon: {fileID: 7218279965169172284, guid: 6f26746a213f92240b4b364d9f241c3a,
+  defaultWeapon: {fileID: 3235885318539102104, guid: ee7c25170d16ae94bbb232ecf95b7dcf,
     type: 3}
   healthChanged:
     m_PersistentCalls:
