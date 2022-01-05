@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9161594657988230194}
   - component: {fileID: 9013474862281283553}
   - component: {fileID: 1279220708436109956}
+  - component: {fileID: 6780128721433048273}
   m_Layer: 0
   m_Name: Cockroach
   m_TagString: Untagged
@@ -136,7 +137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.975175, y: 8.019102}
+  m_Size: {x: 45, y: 45}
   m_EdgeRadius: 0
 --- !u!50 &9013474862281283553
 Rigidbody2D:
@@ -177,3 +178,17 @@ MonoBehaviour:
   healthChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6780128721433048273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391611239184691937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88e5d5133b94c0bb7202414e1403387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMobType: {fileID: 639846518012087839, guid: 381d4eae447f472418bdfa54515585e6,
+    type: 3}
