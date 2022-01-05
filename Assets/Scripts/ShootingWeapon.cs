@@ -19,5 +19,6 @@ public class ShootingWeapon : Weapon
         var bullet = Instantiate(bulletType, Map.Instance.transform);
         bullet.transform.position = new Vector3(position.x, position.y);
         bullet.StartCoroutine(bullet.StartMove(direction, bulletSpeedMultiplier));
+        bullet.SetOwner(Owner);
     }
 }

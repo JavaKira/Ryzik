@@ -29,6 +29,7 @@ namespace Content
             });
 
             Weapon = GetComponentInChildren<WeaponSlot>().Build(defaultWeapon);
+            Weapon.SetOwner(this);
         }
         
         private void OnCollisionEnter2D(Collision2D other)

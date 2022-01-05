@@ -9,11 +9,12 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float lifetime = 5;
 
     private float _time;
+    private Mob _owner;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         var mob = other.gameObject.GetComponent<Mob>();
-        if (mob != null)
+        if (mob != null && !mob.Equals(_owner))
             mob.ApplyDamage(damage);
         Destroy(gameObject);
     }
@@ -32,5 +33,10 @@ public class Bullet : MonoBehaviour
         }
         
         Destroy(gameObject);
+    }
+
+    public void SetOwner(Mob mob)
+    {
+        _owner = mob;
     }
 }
