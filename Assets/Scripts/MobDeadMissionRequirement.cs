@@ -14,7 +14,7 @@ public class MobDeadMissionRequirement : MissionRequirement
     {
         Mob.MobDead.AddListener(mob =>
         {
-            if (mob.name.Equals(_mobType.name))
+            if (Map.Instance.Mobs.GetByName(_mobType.name).Count == 0)
                 DoneEvent.Invoke();
         });
     }
