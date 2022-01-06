@@ -16,6 +16,10 @@ public class Bullet : MonoBehaviour
         var mob = other.gameObject.GetComponent<Mob>();
         if (mob != null && !mob.Equals(_owner))
             mob.ApplyDamage(damage);
+        
+        if (mob != null && mob.Equals(_owner))
+            return;
+        
         Destroy(gameObject);
     }
 
