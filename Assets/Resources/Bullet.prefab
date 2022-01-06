@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   lifetime: 5
+  destroyEffect: {fileID: 1392436106507341662, guid: acff269a33ada654f9d2439cbadd58b5,
+    type: 3}
 --- !u!212 &9099708991769403240
 SpriteRenderer:
   m_ObjectHideFlags: 0

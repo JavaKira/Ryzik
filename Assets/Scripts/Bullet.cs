@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private int damage;
     [SerializeField] private float lifetime = 5;
+    [SerializeField] private ParticleSystem destroyEffect;
 
     private float _time;
     private Mob _owner;
@@ -20,7 +21,23 @@ public class Bullet : MonoBehaviour
         if (mob != null && mob.Equals(_owner))
             return;
         
+        Destroy();
+    }
+
+    private void Destroy()
+    {
+        var effect = Instantiate(destroyEffect, Map.Instance.transform);
+        var position = transform.position;
+        effect.transform.position = new Vector3(position.x, position.y, position.z);
+        StartCoroutine(StartDestroyEffect(effect, 1));
         Destroy(gameObject);
+    }
+
+    private IEnumerator StartDestroyEffect(ParticleSystem particle, float delay)
+    {
+        particle.Play();
+        yield return new WaitForSeconds(delay);
+        Destroy(particle.gameObject);
     }
 
     public IEnumerator StartMove(Vector2 direction, float speedMultiplier)
@@ -36,7 +53,7 @@ public class Bullet : MonoBehaviour
             yield return null;
         }
         
-        Destroy(gameObject);
+        Destroy();
     }
 
     public void SetOwner(Mob mob)
