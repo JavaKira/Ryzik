@@ -18,6 +18,11 @@ namespace UI.Joystick
         {
             if (_joystick.GetNormalized() != Vector2.zero)
                 player.Mob.Weapon.Attack();
+            
+            if (_joystick.GetNormalized().x > 0)
+                player.SetFlip(true);
+            else if (_joystick.GetNormalized().x < 0)
+                player.SetFlip(false);
         }
         
         public void SetPlayer(PlayerBehaviour newPlayer)
