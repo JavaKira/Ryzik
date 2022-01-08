@@ -3,18 +3,18 @@
 public class MissionType
 {
     private readonly string _mapName;
-    private readonly MissionRequirement _missionEndMainRequirement;
-    private readonly List<MissionRequirement> _missionEndRequirements;
-    private readonly List<MissionRequirement> _missionFailRequirements;
+    public MissionRequirement MissionEndMainRequirement { get; }
+    public List<MissionRequirement> MissionEndRequirements { get; }
+    public List<MissionRequirement> MissionFailRequirements { get; }
 
     public Mission LastMission { get; private set; }
 
     public MissionType(string mapName, MissionRequirement missionEndMainRequirement, List<MissionRequirement> missionEndRequirements, List<MissionRequirement> missionFailRequirements)
     {
         _mapName = mapName;
-        _missionEndMainRequirement = missionEndMainRequirement;
-        _missionEndRequirements = missionEndRequirements;
-        _missionFailRequirements = missionFailRequirements;
+        MissionEndMainRequirement = missionEndMainRequirement;
+        MissionEndRequirements = missionEndRequirements;
+        MissionFailRequirements = missionFailRequirements;
     }
 
     public void StartMission()
@@ -26,8 +26,8 @@ public class MissionType
     public void BuildMission(Mission mission)
     {
         LastMission = mission;
-        mission.MissionEndMainRequirement = _missionEndMainRequirement;
-        mission.MissionEndRequirements = new List<MissionRequirement>(_missionEndRequirements);
-        mission.MissionFailRequirements = new List<MissionRequirement>(_missionFailRequirements);
+        mission.MissionEndMainRequirement = MissionEndMainRequirement;
+        mission.MissionEndRequirements = new List<MissionRequirement>(MissionEndRequirements);
+        mission.MissionFailRequirements = new List<MissionRequirement>(MissionFailRequirements);
     }
 }

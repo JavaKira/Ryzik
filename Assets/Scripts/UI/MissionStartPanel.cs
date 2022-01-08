@@ -8,6 +8,10 @@ namespace UI
     public class MissionStartPanel : MonoBehaviour
     {
         public static CampaignPoint LastPoint;
+
+        [SerializeField] private TMP_Text mainRequirementTitle;
+        [SerializeField] private TMP_Text firstRequirementTitle;
+        [SerializeField] private TMP_Text secondRequirementTitle;
         
         private CampaignPoint _currentPoint;
         private Star[] _stars;
@@ -28,6 +32,11 @@ namespace UI
             gameObject.SetActive(true);
             
             UpdateStars();
+            
+            var missionType = _currentPoint.MissionType.Build();
+            mainRequirementTitle.text = missionType.MissionEndMainRequirement.ToString();
+            firstRequirementTitle.text = missionType.MissionEndRequirements[0].ToString();
+            secondRequirementTitle.text = missionType.MissionEndRequirements[1].ToString();
         }
 
         public void StartGame()

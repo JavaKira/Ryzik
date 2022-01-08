@@ -816,7 +816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Finisn within 1 Minute
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Destroy all oil barrels
+  m_text: '
 
 '
   m_isRightToLeft: 0
@@ -1998,6 +1998,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017ca7f6d5004c7eb41e9c6b43e18c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainRequirementTitle: {fileID: 1664712317}
+  firstRequirementTitle: {fileID: 1160605188}
+  secondRequirementTitle: {fileID: 372001101}
 --- !u!114 &1256063041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2720,7 +2723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kill all enemies
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}

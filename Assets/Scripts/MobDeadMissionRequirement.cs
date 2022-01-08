@@ -18,4 +18,9 @@ public class MobDeadMissionRequirement : MissionRequirement
                 DoneEvent.Invoke();
         });
     }
+
+    public override string ToString()
+    {
+        return "Kill all " + _mobType.name;
+    }
 }
