@@ -3,17 +3,22 @@ using UnityEngine.EventSystems;
 
 namespace UI.Joystick
 {
-    public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUpHandler, IPointerDownHandler
+    public class Joystick : MonoBehaviour, IDragHandler, IEndDragHandler, IPointerUpHandler
     {
         [SerializeField] private GameObject cursor;
-
-        private int _touchID = -1;
 
         public GameObject Cursor => cursor;
 
         public void OnDrag(PointerEventData eventData)
         {
-            var position = Input.GetTouch(_touchID).position;
+            var touchId = eventData.pointerId;
+            while (touchId > Input.touchCount - 1)
+            {
+                touchId--;
+                if (touchId <= 0) break;
+            }
+            
+            var position = Input.GetTouch(touchId).position;
             var mousePosition =
                 new Vector3(position.x, position.y) - Camera.main.WorldToScreenPoint(transform.position);
 
@@ -26,12 +31,6 @@ namespace UI.Joystick
             ClearCursor();
         }
 
-        public void OnPointerDown(PointerEventData eventData)
-        {
-            if (_touchID == -1)
-                _touchID = Input.touchCount - 1;
-        }
-
         public void OnPointerUp(PointerEventData eventData)
         {
             ClearCursor();
@@ -39,7 +38,6 @@ namespace UI.Joystick
 
         private void ClearCursor()
         {
-            _touchID = -1;
             ((RectTransform) cursor.transform).localPosition = new Vector3(0, 0, 0);
         }
 
