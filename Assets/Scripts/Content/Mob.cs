@@ -1,4 +1,5 @@
 ﻿using System;
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,10 +11,10 @@ namespace Content
         
         [SerializeField] private int maxHealth;
         [SerializeField] private int enemyCollisionDamage;
-        [SerializeField] private Weapon defaultWeapon;
+        [SerializeField] private Weapon.Weapon defaultWeapon;
 
         public int MaxHealth => maxHealth;
-        public Weapon Weapon { get; private set; }
+        public Weapon.Weapon Weapon { get; private set; }
         public int Health { get; private set; }
 
         public UnityEvent healthChanged = new UnityEvent();
