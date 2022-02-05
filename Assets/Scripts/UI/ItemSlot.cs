@@ -22,12 +22,6 @@ namespace UI
 
         public virtual void OnPointerDown(PointerEventData eventData)
         {
-            if (!Selected)
-            {
-                Select();
-                return;
-            }
-
             var cursor = Cursor.Instance;
             if (cursor == null) return;
 
@@ -42,6 +36,9 @@ namespace UI
                 cursor.SetItem(null);
                 Select();
             }
+
+            if (Selected) return;
+            Select();
         }
 
         public void SetItem(Item newItem)
