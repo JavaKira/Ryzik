@@ -9,6 +9,7 @@ namespace UI
         public void OpenMainMenu()
         {
             SceneManager.LoadScene("MainMenu");
+            Game.Instance.Resume();
         }
     }
 }
