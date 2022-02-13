@@ -9,7 +9,7 @@ namespace IO
         private const string Extension = ".rcamp";
         private const string Directory = "Campaign/";
 
-        public static void Save()
+        public static void Save(CampaignData data)
         {
             var directory = new DirectoryInfo(Application.persistentDataPath + "/" + Directory);
 
@@ -22,35 +22,34 @@ namespace IO
             var writer = new BinaryWriter(fileStream);
             var writes = new Writes(writer);
       
-            writes.Int(Campaign.PointData.Count);
+            writes.Int(data.PointData.Count);
 
-            foreach (var data in Campaign.PointData)
+            foreach (var pointData in data.PointData)
             {
-                writes.String(data.CampaignPointTitle);
-                data.Write(writes);
+                writes.String(pointData.CampaignPointTitle);
+                pointData.Write(writes);
             }
         }
 
-        public static void Load()
+        public static CampaignData Load()
         {
             var name = "campaignSave";
             name += Extension;
             var fileStream = new FileStream(Application.persistentDataPath + "/" + Directory + name, FileMode.Open);
             var reader = new BinaryReader(fileStream);
             var reads = new Reads(reader);
+            var data = new CampaignData();
 
             var completedPointsCount = reads.Int();
 
-            Campaign.PointData.Clear();
-            
             for (var i = 0; i < completedPointsCount; i++)
             {
-                var data = new CampaignPoint.CampaignPointData(reads.String());
-                data.Read(reads);
-                Campaign.PointData.Add(data);
+                var pointData = new CampaignPoint.CampaignPointData(reads.String());
+                pointData.Read(reads);
+                data.PointData.Add(pointData);
             }
 
-            Campaign.Loaded = true;
+            return data;
         }
     }
 }

@@ -27,7 +27,7 @@ namespace UI
 
         private void Awake()
         {
-            var data = Campaign.GetData(title);
+            var data = Campaign.GetData().GetData(title);
             Data = data ?? new CampaignPointData(title);
             _stars = GetComponentsInChildren<Star>();
         }

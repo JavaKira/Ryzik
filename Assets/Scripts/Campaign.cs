@@ -1,39 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using IO;
 using UI;
 using UnityEngine.SceneManagement;
 
 public static class Campaign
 {
-    public static readonly List<CampaignPoint.CampaignPointData>
-        PointData = new List<CampaignPoint.CampaignPointData>();
-
-    public static bool Loaded;
+    private static CampaignData _data;
+    private static bool _loaded;
 
     public static void Complete(CampaignPoint campaignPoint)
     {
-        if (!PointData.Contains(campaignPoint.Data))
-            PointData.Add(campaignPoint.Data);
+        if (!_data.PointData.Contains(campaignPoint.Data))
+            _data.PointData.Add(campaignPoint.Data);
         
         campaignPoint.Data.Completed = true;
-        CampaignIO.Save();
+        CampaignIO.Save(_data);
     }
 
-    public static CampaignPoint.CampaignPointData GetData(string title)
+    public static CampaignData GetData()
     {
-        if (Loaded) return PointData.Find(data => data.CampaignPointTitle.Equals(title));
+        if (_loaded) return _data;
+        
         try
         {
-            CampaignIO.Load();
+            _data = CampaignIO.Load();
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
         }
-        
-        return PointData.Find(data => data.CampaignPointTitle.Equals(title));
+
+        return _data;
     }
 
     public static void OpenCampaignRoad()
