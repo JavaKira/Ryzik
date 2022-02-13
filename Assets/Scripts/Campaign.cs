@@ -24,6 +24,7 @@ public static class Campaign
         try
         {
             _data = CampaignIO.Load();
+            _loaded = true;
         }
         catch (Exception e)
         {
