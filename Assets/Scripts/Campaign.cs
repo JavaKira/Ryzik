@@ -10,8 +10,8 @@ public static class Campaign
 
     public static void Complete(CampaignPoint campaignPoint)
     {
-        if (!_data.PointData.Contains(campaignPoint.Data))
-            _data.PointData.Add(campaignPoint.Data);
+        if (!_data._pointData.Contains(campaignPoint.Data))
+            _data._pointData.Add(campaignPoint.Data);
         
         campaignPoint.Data.Completed = true;
         CampaignIO.Save(_data);
