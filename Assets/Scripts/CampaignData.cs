@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class CampaignData
 {
     public readonly List<CampaignPoint.CampaignPointData>
-        _pointData = new List<CampaignPoint.CampaignPointData>();
+        PointData = new List<CampaignPoint.CampaignPointData>();
     private int _money;
 
     public int Money
@@ -22,6 +22,6 @@ public class CampaignData
     
     public CampaignPoint.CampaignPointData GetData(string title)
     {
-        return _pointData.Find(data => data.CampaignPointTitle.Equals(title));
+        return PointData.Find(data => data.CampaignPointTitle.Equals(title));
     }
 }

@@ -22,10 +22,10 @@ namespace IO
             var writer = new BinaryWriter(fileStream);
             var writes = new Writes(writer);
       
-            writes.Int(data._pointData.Count);
+            writes.Int(data.PointData.Count);
             writes.Int(data.Money);
 
-            foreach (var pointData in data._pointData)
+            foreach (var pointData in data.PointData)
             {
                 writes.String(pointData.CampaignPointTitle);
                 pointData.Write(writes);
@@ -48,9 +48,9 @@ namespace IO
             {
                 var pointData = new CampaignPoint.CampaignPointData(reads.String());
                 pointData.Read(reads);
-                data._pointData.Add(pointData);
+                data.PointData.Add(pointData);
             }
-
+            
             return data;
         }
     }
