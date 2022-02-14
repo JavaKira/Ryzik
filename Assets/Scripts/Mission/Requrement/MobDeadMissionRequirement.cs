@@ -1,4 +1,5 @@
 ﻿using Content;
+using UnityEngine;
 
 namespace Mission.Requrement
 {
@@ -6,7 +7,7 @@ namespace Mission.Requrement
     {
         private Mob _mobType;
 
-        public MobDeadMissionRequirement(Mob mobType)
+        public MobDeadMissionRequirement(string title, Mob mobType) : base(title)
         {
             _mobType = mobType;
             AddDoneCheck();
@@ -19,11 +20,6 @@ namespace Mission.Requrement
                 if (Map.Instance.Mobs.GetByName(_mobType.name).Count == 1)
                     DoneEvent.Invoke();
             });
-        }
-
-        public override string ToString()
-        {
-            return "Kill all " + _mobType.name;
         }
     }
 }

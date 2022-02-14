@@ -8,6 +8,16 @@ namespace Mission.Requrement
 
         protected bool Done;
 
-        public abstract override string ToString();
+        private string _title;
+
+        protected MissionRequirement(string title)
+        {
+            _title = title;
+        }
+
+        public override string ToString()
+        {
+            return _title;
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace Mission.RequrementBuilder
     
         public override MissionRequirement Build()
         {
-            return new MobDeadMissionRequirement(mobType);
+            return new MobDeadMissionRequirement(title, mobType);
         }
     }
 }
