@@ -12,6 +12,7 @@ namespace Content
         [SerializeField] private int maxHealth;
         [SerializeField] private int enemyCollisionDamage;
         [SerializeField] private Weapon.Weapon defaultWeapon;
+        [SerializeField] private DestroyEffect destroyEffect;
 
         public int MaxHealth => maxHealth;
         public Weapon.Weapon Weapon { get; private set; }
@@ -78,6 +79,17 @@ namespace Content
             MobDead.Invoke(this);
             Map.Instance.Mobs.Remove(this);
             Destroy(gameObject);
+            
+            if (destroyEffect != null)
+                StartDestroyEffect();
+        }
+
+        private void StartDestroyEffect()
+        {
+            var destroyEffectInstance = Instantiate(destroyEffect, Map.Instance.transform);
+            var position = transform.position;
+            destroyEffectInstance.transform.position = new Vector3(position.x, position.y, position.z);
+            destroyEffectInstance.StartEffect();
         }
 
         public static Mob GetByName(string name)
