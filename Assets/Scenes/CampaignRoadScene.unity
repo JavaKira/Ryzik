@@ -464,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: title
-      value: Point3
+      value: Protects Oil
       objectReference: {fileID: 0}
     - target: {fileID: 784949123771577112, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
@@ -589,7 +589,7 @@ PrefabInstance:
     - target: {fileID: 8064412244852231981, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
       propertyPath: m_Name
-      value: Point (3)
+      value: ProtectsOil
       objectReference: {fileID: 0}
     - target: {fileID: 8958509739017916009, guid: ae8fce0e1ecfd27479d78fc84794b4fa,
         type: 3}
@@ -3236,10 +3236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6212ccc72cdc41caa5a1bb0ecde451ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapName: Surrounded
-  missionEndMainRequirement: {fileID: 1021470251}
+  mapName: ProtectsOil
+  missionEndMainRequirement: {fileID: 1021470253}
   missionEndRequirements:
   - {fileID: 1021470251}
+  - {fileID: 1021470252}
   missionFailRequirements: []
 --- !u!114 &1021470251
 MonoBehaviour:
@@ -3255,6 +3256,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: kill all cocroaches
   mobType: {fileID: 1279220708436109956, guid: c96626f830c195449afe6c5ee66e6d68, type: 3}
+--- !u!114 &1021470252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021470249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c184e733addc4da5903ef5b1797cab46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: destroy all crates
+  mobType: {fileID: 6235221487731665882, guid: 02732eb5294811c49959b8d8f99a0ea3, type: 3}
+--- !u!114 &1021470253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021470249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c184e733addc4da5903ef5b1797cab46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: destroy all oil barrels
+  mobType: {fileID: 5510493613539820554, guid: c824c03fadfd36b43b8bedfca5c7f82d, type: 3}
 --- !u!224 &1034107223 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2063487524870481415, guid: eb33acbb422d4614eb0b6a5457948e7c,
